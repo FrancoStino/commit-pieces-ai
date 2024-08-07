@@ -2,7 +2,7 @@
   "name": "commit-pieces-ai",
   "displayName": "Commit Pieces for Developers AI",
   "description": "Generative Commit AI with Pieces for Developers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "DavideLadisa",
   "engines": {
     "vscode": "^1.92.0"
