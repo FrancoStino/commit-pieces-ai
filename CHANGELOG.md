@@ -1,3 +1,11 @@
+## [v1.0.3] - 2024-08-07
+### :bug: Bug Fixes
+- [`6ac5868`](https://github.com/FrancoStino/commit-pieces-ai/commit/6ac58688b829fe97a62561ddb2d9437395b8add3) - Update README with features and usage. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :wrench: Chores
+- [`d6018a5`](https://github.com/FrancoStino/commit-pieces-ai/commit/d6018a5d30c4f3e75981e20d4a733e23e15fb3c0) - Bump application version *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.0.2] - 2024-08-07
 ### :sparkles: New Features
 - [`1d96123`](https://github.com/FrancoStino/commit-pieces-ai/commit/1d961231fc08a71fccaf2be3a79bd8c5e4a8668e) - Release v1.0.0 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -16,3 +24,4 @@
 
 - Initial release
 [v1.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.1...v1.0.2
+[v1.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.2...v1.0.3
