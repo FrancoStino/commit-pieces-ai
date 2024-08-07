@@ -18,20 +18,6 @@ To use Commit Pieces for Developer, you need to configure your Pieces for Develo
 1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
 2. Type "Reset Pieces for Developer API Key" -->
 
-## Features
-
-![Commit Groq Demo](https://raw.githubusercontent.com/FrancoStino/commit-pieces-ai/main/assets/commitpiecesai-demo.gif)
-
-- Automatic generation of commit messages based on modified code.
-- Code analysis for improvement suggestions before committing.
-- Seamless integration with Git workflow in VS Code.
-
-## Usage
-
-1. Make your code changes as usual.
-2. When you're ready to commit, use the "Run Commit Pieces for Developers" command from the command palette (Ctrl+Shift+P).
-3. The extension will generate a commit message based on your changes.
-4. Review and modify the message if necessary, then proceed with the commit.
 
 ## Settings
 
