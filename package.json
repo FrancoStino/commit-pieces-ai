@@ -1,9 +1,9 @@
 {
   "name": "commit-pieces-ai",
-  "displayName": "Commit Pieces AI",
-  "description": "Generate commit with Pieces for Developers",
-  "publisher": "DavideLadisa",
+  "displayName": "Commit Pieces for Developers AI",
+  "description": "Generative Commit AI with Pieces for Developers",
   "version": "1.0.0",
+  "publisher": "DavideLadisa",
   "engines": {
     "vscode": "^1.92.0"
   },
@@ -21,7 +21,6 @@
     "llm",
     "commits",
     "pieces",
-    "commit",
     "pieces for developers"
   ],
   "activationEvents": [],
@@ -30,7 +29,7 @@
     "commands": [
       {
         "command": "commit-pieces-ai.createCommit",
-        "title": "Run Commit Pieces",
+        "title": "Run Commit Pieces for Developers",
         "icon": "$(sparkle)"
       }
     ],
@@ -42,74 +41,60 @@
           "group": "navigation"
         }
       ]
-    }
-  },
-  "configuration": [
-    {
-      "title": "Model Pieces AI",
-      "properties": {
-        "commit-pieces-ai.model": {
-          "type": "string",
-          "enum": [
-            "gpt-3.5-turbo",
-            "gemini-1.5-pro"
-          ],
-          "default": "gpt-3.5-turbo",
-          "description": "Model to use for the commit creations.",
-          "order": 1
-        },
-        "commit-pieces-ai.useEmojis": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enable or disable the use of emojis in commit messages.",
-          "order": 2
-        },
-        "commit-pieces-ai.commitEmojis": {
-          "type": "object",
-          "default": {
-            "feat": "✨",
-            "fix": "🐛",
-            "docs": "📝",
-            "style": "💎",
-            "refactor": "♻️",
-            "test": "🧪",
-            "chore": "📦",
-            "revert": "⏪"
+    },
+    "configuration": [
+      {
+        "title": "Commit Pieces for Developers",
+        "properties": {
+          "commit-pieces-ai.model": {
+            "type": "string",
+            "enum": [
+              "gpt-4o",
+              "gpt-4",
+              "gpt-3.5-turbo",
+              "gemini-1.5-pro"
+            ],
+            "default": "gpt-4o",
+            "description": "Model to use for the commit creations.",
+            "order": 1
           },
-          "description": "Map commit types to emojis. Only used if emojis are enabled.",
-          "order": 3
-        },
-        "commit-pieces-ai.custom.summaryPrompt": {
-          "type": "string",
-          "default": "",
-          "description": "Custom prompt for summarize the git diff.",
-          "order": 4
-        },
-        "commit-pieces-ai.custom.summaryTemperature": {
-          "type": "number",
-          "default": 0.8,
-          "minimum": 0,
-          "maximum": 2,
-          "description": "Custom temperature for summarize the git diff. (between 0 and 2)",
-          "order": 5
-        },
-        "commit-pieces-ai.custom.commitPrompt": {
-          "type": "string",
-          "default": "",
-          "description": "Custom prompt for commit message.",
-          "order": 6
-        },
-        "commit-pieces-ai.custom.commitTemperature": {
-          "type": "number",
-          "default": 0.2,
-          "minimum": 0,
-          "maximum": 1,
-          "description": "Custom temperature for commit message. (greater = more creative)",
-          "order": 7
+          "commit-pieces-ai.useEmojis": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable or disable the use of emojis in commit messages.",
+            "order": 2
+          },
+          "commit-pieces-ai.commitEmojis": {
+            "type": "object",
+            "default": {
+              "feat": "✨",
+              "fix": "🐛",
+              "docs": "📝",
+              "style": "💎",
+              "refactor": "♻️",
+              "test": "🧪",
+              "chore": "📦",
+              "revert": "⏪"
+            },
+            "description": "Map commit types to emojis. Only used if emojis are enabled.",
+            "order": 3
+          },
+          "commit-pieces-ai.custom.summaryPrompt": {
+            "type": "string",
+            "default": "",
+            "description": "Custom prompt for summarize the git diff.",
+            "order": 4
+          },
+          "commit-pieces-ai.custom.commitPrompt": {
+            "type": "string",
+            "default": "",
+            "description": "Custom prompt for commit message.",
+            "order": 6
+          }
         }
       }
-    }
-  ],
+    ]
+  },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "compile": "tsc -p ./",
@@ -120,12 +105,13 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.7",
-    "@types/node": "22.1.0",
-    "@types/vscode": "^1.92.0",
+    "@types/node": "22.0.1",
+    "@types/vscode": "^1.91.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.23.0",
     "eslint": "^9.8.0",
     "typescript": "^5.5.4"
   },

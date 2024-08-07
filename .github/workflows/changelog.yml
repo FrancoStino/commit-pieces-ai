@@ -1,0 +1,71 @@
+name: Changelog
+
+on:
+  workflow_run:
+    workflows: ['Tag']
+    types:
+      - completed
+
+jobs:
+  deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get latest tag
+        id: latestTag
+        run: |
+          # Ottieni il tag più recente
+          latest_tag=$(git describe --tags --abbrev=0)
+          echo "latestTag=$latest_tag" >> $GITHUB_ENV
+
+      - name: Get previous tag
+        id: previousTag
+        run: |
+          # Ottieni il tag precedente al tag più recente
+          previous_tag=$(git tag --sort=creatordate | grep -B1 "${{ env.latestTag }}" | head -1)
+          echo "previousTag=$previous_tag" >> $GITHUB_ENV
+
+      - name: Debug Tag Information
+        run: |
+          echo "Latest Tag: ${{ env.latestTag }}"
+          echo "Previous Tag: ${{ env.previousTag }}"
+          echo "Commits between ${{ env.previousTag }} and ${{ env.latestTag }}:"
+          git log ${{ env.previousTag }}..${{ env.latestTag }} --oneline
+
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1.10.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fromTag: ${{ env.latestTag }}
+          toTag: ${{ env.previousTag }}
+          # useGitmojis: true
+          includeInvalidCommits: true
+          excludeTypes: docs
+
+          
+      # - name: Create Release
+      #   uses: ncipollo/release-action@v1.14.0
+      #   with:
+      #     allowUpdates: true
+      #     draft: true
+      #     makeLatest: true
+      #     name: ${{ github.ref_name }}
+      #     body: ${{ steps.changelog.outputs.changes }}
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        with:
+          branch: main
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          file_pattern: CHANGELOG.md
