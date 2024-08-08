@@ -1,3 +1,8 @@
+## [v1.1.1] - 2024-08-08
+### :wrench: Chores
+- [`b24faf3`](https://github.com/FrancoStino/commit-pieces-ai/commit/b24faf3b3a55c6f587a202e24a20576cd10f46ed) - Update README and bump version *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.0] - 2024-08-08
 ### :sparkles: New Features
 - [`ee04401`](https://github.com/FrancoStino/commit-pieces-ai/commit/ee04401cfb685b2bfb606280ace6728a40a4c44b) - Update available models and set new default *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -47,3 +52,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.1...v1.0.2
 [v1.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.2...v1.0.3
 [v1.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.3...v1.1.0
+[v1.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.0...v1.1.1
