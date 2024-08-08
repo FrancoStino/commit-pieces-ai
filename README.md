@@ -1,18 +1,18 @@
-# Commit Pieces for Developer AI
+# Commit Pieces for Developers AI
 
-Commit Pieces for Developer AI is a Visual Studio Code extension that uses the Pieces for Developer to enhance the code commit process.
+Commit Pieces for Developers AI is a Visual Studio Code extension that uses the Pieces for Developers to enhance the code commit process.
 
 ## Configuration
 
 To use Commit Pieces for Developer AI, you need to install **[Pieces for Developer](https://pieces.app/)**. Follow these steps:
 
-1. You don't need any API key to use Commit Pieces for Developer.
+1. You don't need any API key to use Commit Pieces for Developers.
 2. Click on the Sparkle icon in the Source Control icon in the VS Code toolbar.
 3. Open the VS Code settings (File > Preferences > Settings).
-4. Search for "Commit Pieces for Developer" in the settings to customize it.
+4. Search for "Commit Pieces for Developers" in the settings to customize it.
 5. Enjoy!
 
-<!-- 
+<!--
 ## Reset API Key
 
 1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
@@ -33,13 +33,12 @@ To use Commit Pieces for Developer AI, you need to install **[Pieces for Develop
 3. The extension will generate a commit message based on your changes.
 4. Review and modify the message if necessary, then proceed with the commit.
 
-
 ## Settings
 
 This extension contributes the following settings:
 
-- "Run Commit Pieces for Developer": automatically generates a commit message for your commit.
-<!-- - "Reset API Commit Pieces for Developer": resets your API key. -->
+- "Run Commit Pieces for Developers": automatically generates a commit message for your commit.
+<!-- - "Reset API Commit Pieces for Developers": resets your API key. -->
 
 - Model: You can select the model from the plugin configuration.
 
@@ -50,7 +49,6 @@ This extension contributes the following settings:
 `gpt-3.5-turbo`
 
 `gemini-1.5-pro`
-
 
 Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
@@ -78,8 +76,6 @@ Custom Emojis: It allows you to write down the emojis you want to use in the nex
 <!-- - Custom Summary Temperature: The temperature that will be used to generate the summary of all git diff. -->
 
 <!-- - Custom Commit Temperature: The temperature that will be used to generate the commit message. -->
-
-
 
 ## Known Issues
 
