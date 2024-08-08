@@ -91,7 +91,6 @@ Custom Emojis: It allows you to write down the emojis you want to use in the nex
 }
 ```
 
-<!-- - Custom Endpoint: Ollama usually uses port 11434. It is the value that will be used if empty. -->
 
 - Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 

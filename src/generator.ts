@@ -78,7 +78,7 @@ export async function getSummary(diff: string): Promise<string> {
         }
 
         throw new Error(
-            "Unable to connect to ollama. Please, check that ollama is running.",
+            "Unable to connect to Pieces OS. Please, check that Pieces OS is running.",
         );
     }
 }
