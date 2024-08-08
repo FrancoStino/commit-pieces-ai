@@ -1,55 +1,22 @@
-import * as vscode from "vscode";  // Importa il modulo vscode
-import { config } from "./config";  // Importa la configurazione personalizzata
-import * as Pieces from '@pieces.app/pieces-os-client';  // Importa il client Pieces
-import { port } from "./types/os";
+import * as vscode from "vscode";  // Import the vscode module
+import { config } from "./config";  // Import the custom configuration
+import * as Pieces from '@pieces.app/pieces-os-client';  //Import client Pieces
+import { configurationPort } from "./types/os";
+import { getSelectedModel } from './types/getModels';
 
 
-// Configura l'istanza dell'API
-const configuration = new Pieces.Configuration({
-    basePath: `http://localhost:${port}`
-});
-const apiInstance = new Pieces.QGPTApi(configuration);
-const modelsApiInstance = new Pieces.ModelsApi(configuration);
+// Configure the API instance
+const apiInstance = new Pieces.QGPTApi(configurationPort);
 
-const { modelName } = config.inference;
-
-// Funzione per ottenere i modelli disponibili
-const getAvailableModels = async (): Promise<Pieces.Model[]> => {
-    try {
-        const modelsSnapshot = await modelsApiInstance.modelsSnapshot();
-        return modelsSnapshot.iterable || [];
-    } catch (error) {
-        console.error('Error fetching models:', error);
-        throw error;
-    }
-};
-
-// Funzione per selezionare un modello
-const selectModel = (models: Pieces.Model[]): string => {
-    // Per questo esempio, selezioniamo il primo modello disponibile
-    // In un'applicazione reale, potresti implementare una logica più sofisticata per la selezione
-    if (models.length > 0 && models[0]?.id) {
-        console.log(models);
-        console.log(`Selected models: `, models.filter(model => model.unique === modelName).map(model => model.unique));
-        const selectedModel = models.filter(model => model.cloud === true && model.unique === "gemini-1.5-pro")[0];
-        if (selectedModel && selectedModel.id) {
-            return selectedModel.id;
-        }
-    }
-    throw new Error('No models available');
-};
-
+// Define a function to get the summary
 export async function getSummary(diff: string): Promise<string> {
 
     const { summaryPrompt, summaryTemperature } =
         config.inference;
-    // Ottieni i modelli disponibili
-    const availableModels = await getAvailableModels();
 
-    // Seleziona un modello
-    const selectedModelId = selectModel(availableModels);
+    const selectedModelId = await getSelectedModel();
 
-    // Definisci il prompt di sistema come testo che precede la domanda
+    // Define the system prompt as a text that precedes the question
     const defaultSummaryPrompt = `You are an expert developer specialist in creating commits.
 	Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
 	- Do not use any code snippets, imports, file routes or bullets points.
@@ -120,19 +87,14 @@ export async function getSummary(diff: string): Promise<string> {
 export async function getCommitMessage(summaries: string[]) {
     const {
         commitPrompt,
-        commitTemperature,
+        // commitTemperature,
         useEmojis,
         commitEmojis,
-        modelName,
     } = config.inference;
 
-    // Ottieni i modelli disponibili
-    const availableModels = await getAvailableModels();
+    const selectedModelId = await getSelectedModel();
 
-    // Seleziona un modello
-    const selectedModelId = selectModel(availableModels);
-
-    // Definisci il prompt di sistema come testo che precede la domanda
+    // Define the system prompt as text that precedes the question
     const defaultCommitPrompt = `You are an expert developer specialist in creating commits messages.
 	Your only goal is to retrieve a single commit message. 
 	Based on the provided user changes, combine them in ONE SINGLE commit message retrieving the global idea, following strictly the next rules:
@@ -144,10 +106,10 @@ export async function getCommitMessage(summaries: string[]) {
 
     const prompt = commitPrompt || defaultCommitPrompt;
 
-    // Combina il prompt di sistema con la query
+    // Combine the system prompt with the query
     const fullQuery = `${prompt}\n\nHere are the summaries changes: ${summaries.join(", ")}`;
 
-    // Definisci i parametri per la richiesta API
+    // Define the parameters for the API request
     const params = {
         query: fullQuery,
         relevant: {
@@ -158,10 +120,10 @@ export async function getCommitMessage(summaries: string[]) {
 
 
     try {
-        // Invia la query all'API e ottieni il risultato
+        // Send the query to the API and get the result
         const result = await apiInstance.question({ qGPTQuestionInput: params });
 
-        // Verifica se esistono risposte e restituisci il testo della prima risposta
+        // Check if there are answers and return the text of the first answer
         if (result.answers && result.answers.iterable && result.answers.iterable.length > 0) {
             const firstAnswer = result.answers.iterable[0];
 
