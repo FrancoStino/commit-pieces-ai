@@ -1,8 +1,8 @@
 {
   "name": "commit-pieces-ai",
-  "displayName": "Commit Pieces for Developers AI",
+  "displayName": "Commit AI - Pieces for Developers",
   "description": "Generative Commit AI with Pieces for Developers",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "publisher": "DavideLadisa",
   "engines": {
     "vscode": "^1.92.0"
@@ -63,10 +63,9 @@
               "gpt-4",
               "gpt-4-turbo",
               "gpt-4o",
-              "gpt-4o-mini",
-              "sukami"
+              "gpt-4o-mini"
             ],
-            "default": "sukami",
+            "default": "gpt-4o",
             "description": "Model to use for the commit creations.",
             "order": 1
           },
