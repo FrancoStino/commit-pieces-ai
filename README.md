@@ -1,10 +1,10 @@
 # Commit Pieces for Developer AI
 
-Commit Pieces for Developer AI is a Visual Studio Code extension that uses the Pieces for Developer to enhance the code commit process.
+Commit Pieces for Developer AI is a Visual Studio Code extension that uses the Pieces for Developers to enhance the code commit process.
 
 ## Configuration
 
-To use Commit Pieces for Developer AI, you need to install **[Pieces for Developer](https://pieces.app/)**. Follow these steps:
+To use Commit Pieces for Developers AI, you need to install **[Pieces for Developers](https://pieces.app/)**. Follow these steps:
 
 1. You don't need any API key to use Commit Pieces for Developer.
 2. Click on the Sparkle icon in the Source Control icon in the VS Code toolbar.
@@ -89,7 +89,7 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ## For more information
 
-- [Pieces for Developer Documentation](https://docs.pieces.app/)
-- [Commit Pieces for Developer AI GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
+- [Pieces for Developers Documentation](https://docs.pieces.app/)
+- [Commit Pieces for Developers AI GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
 
-**Happy coding with Commit Pieces for Developer AI!**
+**Happy coding with Commit Pieces for Developers AI!**
