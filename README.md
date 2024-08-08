@@ -42,13 +42,35 @@ This extension contributes the following settings:
 
 - Model: You can select the model from the plugin configuration.
 
-`gpt-4o` - default
+`chat-bison`
 
-`gpt-4`
+`claude-3-5-sonnet@20240620`
+
+`claude-3-haiku@20240307`
+
+`claude-3-opus@20240229`
+
+`claude-3-sonnet@20240229`
+
+`codechat-bison`
+
+`gemini-1.5-flash`
+
+`gemini-1.5-pro`
+
+`gemini-pro`
 
 `gpt-3.5-turbo`
 
-`gemini-1.5-pro`
+`gpt-3.5-turbo-16k`
+
+`gpt-4`
+
+`gpt-4-turbo`
+
+`gpt-4o` - default
+
+`gpt-4o-mini`
 
 Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
