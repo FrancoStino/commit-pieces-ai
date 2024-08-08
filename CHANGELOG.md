@@ -1,3 +1,24 @@
+## [v1.1.0] - 2024-08-08
+### :sparkles: New Features
+- [`ee04401`](https://github.com/FrancoStino/commit-pieces-ai/commit/ee04401cfb685b2bfb606280ace6728a40a4c44b) - Update available models and set new default *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`4062cc2`](https://github.com/FrancoStino/commit-pieces-ai/commit/4062cc21e3dbb8ef52883cdbb204f90d94a7aa83) - Integrate Pieces OS client *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`42230b7`](https://github.com/FrancoStino/commit-pieces-ai/commit/42230b713d700bfa6d5c6d15705e505cd2e85c6a) - fetch and retrieve model from Pieces API *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`d328bc8`](https://github.com/FrancoStino/commit-pieces-ai/commit/d328bc8624d7afa113fd07889b8e46a108a9e7e0) - add all cloud models *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`4548f58`](https://github.com/FrancoStino/commit-pieces-ai/commit/4548f58e22c7c9c3bcaa02ba20158dc96a6d62d6) - Update available models in settings *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :bug: Bug Fixes
+- [`7fea8db`](https://github.com/FrancoStino/commit-pieces-ai/commit/7fea8db6c176692b661df4936b811c1f8a9726d9) - Clearer error message for missing models *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :recycle: Refactors
+- [`844cb57`](https://github.com/FrancoStino/commit-pieces-ai/commit/844cb57aff43191c35b605e55e7c61918ca8c445) - Simplify model selection logic *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :flying_saucer: Other Changes
+- [`951a166`](https://github.com/FrancoStino/commit-pieces-ai/commit/951a166829fd444b8d88a4620b0ca9401993bc4d) - Merge branch 'main' into develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`91ec31d`](https://github.com/FrancoStino/commit-pieces-ai/commit/91ec31d44a24e1b64add9793f11f18ed444bf616) - Merge pull request [#2](https://github.com/FrancoStino/commit-pieces-ai/pull/2) from FrancoStino/develop
+
+Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v1.0.3] - 2024-08-07
 ### :bug: Bug Fixes
 - [`6ac5868`](https://github.com/FrancoStino/commit-pieces-ai/commit/6ac58688b829fe97a62561ddb2d9437395b8add3) - Update README with features and usage. *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -25,3 +46,4 @@
 - Initial release
 [v1.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.1...v1.0.2
 [v1.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.2...v1.0.3
+[v1.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.3...v1.1.0
