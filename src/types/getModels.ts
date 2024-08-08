@@ -18,7 +18,7 @@ export const getSelectedModel = async (): Promise<string> => {
         if (selectedModel) {
             return selectedModel.id;
         }
-        throw new Error('The model' + modelName + ' is not available');
+        throw new Error('The model: "' + modelName + '" is not available');
     } catch (error) {
         console.error('Error fetching models:', error);
         throw error;
