@@ -1,18 +1,25 @@
-# Commit Pieces for Developer AI
+# Commit AI - Pieces for Developers
 
+
+Commit AI - Pieces for Developers is a Visual Studio Code extension that uses the Pieces for Developers to enhance the code commit process.
+
+## Configuration
+
+To use Commit AI - Pieces for Developers, you need to install **[Pieces for Developer](https://pieces.app/)**. Follow these steps:
+=======
 Commit Pieces for Developer AI is a Visual Studio Code extension that uses the Pieces for Developers to enhance the code commit process.
 
 ## Configuration
 
 To use Commit Pieces for Developers AI, you need to install **[Pieces for Developers](https://pieces.app/)**. Follow these steps:
 
-1. You don't need any API key to use Commit Pieces for Developer.
+1. You don't need any API key to use Commit Pieces for Developers.
 2. Click on the Sparkle icon in the Source Control icon in the VS Code toolbar.
 3. Open the VS Code settings (File > Preferences > Settings).
-4. Search for "Commit Pieces for Developer" in the settings to customize it.
+4. Search for "Commit Pieces for Developers" in the settings to customize it.
 5. Enjoy!
 
-<!-- 
+<!--
 ## Reset API Key
 
 1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
@@ -33,24 +40,44 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 3. The extension will generate a commit message based on your changes.
 4. Review and modify the message if necessary, then proceed with the commit.
 
-
 ## Settings
 
 This extension contributes the following settings:
 
-- "Run Commit Pieces for Developer": automatically generates a commit message for your commit.
-<!-- - "Reset API Commit Pieces for Developer": resets your API key. -->
+- "Run Commit Pieces for Developers": automatically generates a commit message for your commit.
+<!-- - "Reset API Commit Pieces for Developers": resets your API key. -->
 
 - Model: You can select the model from the plugin configuration.
 
-`gpt-4o` - default
+`chat-bison`
 
-`gpt-4`
+`claude-3-5-sonnet@20240620`
 
-`gpt-3.5-turbo`
+`claude-3-haiku@20240307`
+
+`claude-3-opus@20240229`
+
+`claude-3-sonnet@20240229`
+
+`codechat-bison`
+
+`gemini-1.5-flash`
 
 `gemini-1.5-pro`
 
+`gemini-pro`
+
+`gpt-3.5-turbo`
+
+`gpt-3.5-turbo-16k`
+
+`gpt-4`
+
+`gpt-4-turbo`
+
+`gpt-4o` - default
+
+`gpt-4o-mini`
 
 Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
@@ -79,8 +106,6 @@ Custom Emojis: It allows you to write down the emojis you want to use in the nex
 
 <!-- - Custom Commit Temperature: The temperature that will be used to generate the commit message. -->
 
-
-
 ## Known Issues
 
 There are currently no known issues. If you encounter any problems, please open an issue on our GitHub repository.
@@ -89,6 +114,11 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ## For more information
 
+- [Pieces for Developer Documentation](https://docs.pieces.app/)
+- [Commit AI - Pieces for Developers GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
+
+**Happy coding with Commit AI - Pieces for Developers!**
+=======
 - [Pieces for Developers Documentation](https://docs.pieces.app/)
 - [Commit Pieces for Developers AI GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
 
