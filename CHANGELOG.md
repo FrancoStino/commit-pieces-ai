@@ -1,3 +1,11 @@
+## [v1.1.2] - 2024-08-08
+### :bug: Bug Fixes
+- [`59605d0`](https://github.com/FrancoStino/commit-pieces-ai/commit/59605d091e398c270947e643598a9da3c0d4a2ab) - Update README and error message references *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :wrench: Chores
+- [`47236f8`](https://github.com/FrancoStino/commit-pieces-ai/commit/47236f85a9adad9995e827e5761cef73f07d774c) - bump package version to 1.1.2 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.1] - 2024-08-08
 ### :wrench: Chores
 - [`b24faf3`](https://github.com/FrancoStino/commit-pieces-ai/commit/b24faf3b3a55c6f587a202e24a20576cd10f46ed) - Update README and bump version *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -53,3 +61,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.2...v1.0.3
 [v1.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.3...v1.1.0
 [v1.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.0...v1.1.1
+[v1.1.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.1...v1.1.2
