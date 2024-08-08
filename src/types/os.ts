@@ -1,5 +1,7 @@
 // Check os type
+import * as Pieces from '@pieces.app/pieces-os-client';
 import os from 'os';
+
 
 const platform = os.platform();  // Ottieni il sistema operativo corrente
 let port = 1000;
@@ -10,5 +12,6 @@ if (platform === 'linux') {
 } else {
     port = 1000;
 }
-
-export { port };
+export const configurationPort = new Pieces.Configuration({
+    basePath: `http://localhost:${port}`
+});
