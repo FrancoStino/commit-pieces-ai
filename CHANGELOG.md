@@ -1,3 +1,18 @@
+## [v1.1.3] - 2024-08-09
+### :recycle: Refactors
+- [`3412e17`](https://github.com/FrancoStino/commit-pieces-ai/commit/3412e1782456b97512633c2f13d6c4ab8f277baa) - Add JSDoc, improve error handling/logging *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`5e0841b`](https://github.com/FrancoStino/commit-pieces-ai/commit/5e0841b93df0623932d18682bbcdb82ad9a53d57) - Configure Pieces OS client base path per platform *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :wrench: Chores
+- [`dfc92c0`](https://github.com/FrancoStino/commit-pieces-ai/commit/dfc92c00accc322b339ec75195a46ba78e9e929a) - bump version to 1.1.3 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### :flying_saucer: Other Changes
+- [`9502ef3`](https://github.com/FrancoStino/commit-pieces-ai/commit/9502ef32c3be907d785fb7afdbe746c4829585ce) - Create LICENSE *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`0d5b4ec`](https://github.com/FrancoStino/commit-pieces-ai/commit/0d5b4ece41b3ddd29b82b67b333d27a1f77016c1) - Add License
+
+Add License *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v1.1.2] - 2024-08-08
 ### :bug: Bug Fixes
 - [`59605d0`](https://github.com/FrancoStino/commit-pieces-ai/commit/59605d091e398c270947e643598a9da3c0d4a2ab) - Update README and error message references *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -62,3 +77,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.0.3...v1.1.0
 [v1.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.0...v1.1.1
 [v1.1.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.1...v1.1.2
+[v1.1.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.2...v1.1.3
