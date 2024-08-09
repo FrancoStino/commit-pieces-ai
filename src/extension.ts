@@ -1,3 +1,12 @@
+/**
+ * Activates the "Commit Pieces AI" extension, which provides a command to generate a commit message based on the changes in the current Git repository.
+ *
+ * The extension listens for the "commit-pieces-ai.createCommit" command, which can be triggered either on a specific file or for all files in the current repository. It then generates a commit message based on the changes in the repository and sets it in the repository's input box.
+ *
+ * The extension uses the `vscode.git` extension to interact with the Git repository and the `getCommitMessage` and `getSummary` functions from the `generator` module to generate the commit message.
+ *
+ * @param context - The extension context, which is used to register the command and subscribe to the extension's lifecycle events.
+ */
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
