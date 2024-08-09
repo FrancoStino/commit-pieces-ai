@@ -1,3 +1,8 @@
+## [v1.1.4] - 2024-08-09
+### Chores
+- [`5db4b58`](https://github.com/FrancoStino/commit-pieces-ai/commit/5db4b58dc49fc353d1297ef7a2e79fcfc78b5219) - update dependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.3] - 2024-08-09
 ### :recycle: Refactors
 - [`3412e17`](https://github.com/FrancoStino/commit-pieces-ai/commit/3412e1782456b97512633c2f13d6c4ab8f277baa) - Add JSDoc, improve error handling/logging *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -78,3 +83,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.0...v1.1.1
 [v1.1.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.1...v1.1.2
 [v1.1.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.2...v1.1.3
+[v1.1.4]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.3...v1.1.4
