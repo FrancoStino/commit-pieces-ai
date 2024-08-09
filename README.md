@@ -1,8 +1,32 @@
+<div align="center">
+
 # Commit AI - Pieces for Developers
 
+<img src="assets/icon.png" width="25%">
+
+---
+
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Version">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Installs">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Rating">
+  </a>
+  <a href="https://github.com/FrancoStino/commit-pieces-ai/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/DavideLadisa/commit-pieces-ai?style=for-the-badge" alt="GitHub license">
+  </a>
+  <a href="https://pieces.app/">
+    <img src="https://img.shields.io/badge/pieces-for%20developers-191919?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAB3UlEQVQoz11TTWgTQRj9IGya7UpEPMVuLagYkQr%20QOpRtOBJBBc8eyqCIHgrrYRiipeCCF715E2rULEU3cZWIqXUCtp68Kg0a8EF0WgS7TrveZidZDff6c03b773zTdvROJwxBusToXv%20Y8kqcKNWsUbcqQnhrN%20OWqyJ6KWXznWl6CV8sFLs6nYYAOqQ64vlfaYalbwQif%2F8g6KyDDDI5jBn5j6dXmkT0Tysj6pEy2eR4F3sYmPuIcBnoXpZXXaEbmyL%2FqllzdwEAGM5DaLuG5WratDUr2p8Q%2FafIbkVXzY%2FB7j2rSEbzVcQp5tfsElnMYsSHKHe7EQHw03hTsazilXkRcxigpy3AIJunhsNJQYoSfKVeBR9RCkjTcgt2Bxo9NMh%2FiIriJP4AGIfvWa5DWcRLfpjvSschU5hlG00a8WOAGHK12eknBNo6fKVWSdh3gAGea4H4uJGYQfpDah4XM1oEjyJ%20%2FDwm20Uq9euyVjhahBkqvIcRsk%20RkZfkpNNGp6g%20LIq3FthlM4gxUsYwTnkOJxfSovInLcCudJss4LyMLGZXxL0YLF4ayx2a5gXiebaKeLse6XdiccediaGzfmSPT22y8Xsz0et8UrVCeDtXiuUfiuWvbc7lf4Dx%2FMT2rumNvaAAAAAElFTkSuQmCC" alt="Pieces for Developers">
+  </a>
+  
+</div>
+
+---
 
 Commit AI - Pieces for Developers is a Visual Studio Code extension that uses the Pieces for Developers to enhance the code commit process.
-
 
 ## Configuration
 
@@ -14,15 +38,9 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 4. Search for "Commit Pieces for Developers" in the settings to customize it.
 5. Enjoy!
 
-<!--
-## Reset API Key
-
-1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
-2. Type "Reset Pieces for Developer API Key" -->
-
 ## Features
 
-![Commit Groq Demo](https://raw.githubusercontent.com/FrancoStino/commit-pieces-ai/main/assets/commitpiecesai-demo.gif)
+![Commit Groq Demo](assets/commitpiecesai-demo.gif)
 
 - Automatic generation of commit messages based on modified code.
 - Code analysis for improvement suggestions before committing.
@@ -40,7 +58,6 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 This extension contributes the following settings:
 
 - "Run Commit Pieces for Developers": automatically generates a commit message for your commit.
-<!-- - "Reset API Commit Pieces for Developers": resets your API key. -->
 
 - Model: You can select the model from the plugin configuration.
 
@@ -79,7 +96,7 @@ Use Emojis: It allows you to enable or disable the use of emojis in commit messa
 Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
- "commitollama.commitEmojis": {
+ "commit-pieces-ai.commitEmojis": {
   "feat": "✨",
   "fix": "🐛",
   "docs": "📝",
@@ -91,14 +108,9 @@ Custom Emojis: It allows you to write down the emojis you want to use in the nex
 }
 ```
 
-
 - Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
 - Custom Commit Prompt: The prompt that will be used to generate the commit message.
-
-<!-- - Custom Summary Temperature: The temperature that will be used to generate the summary of all git diff. -->
-
-<!-- - Custom Commit Temperature: The temperature that will be used to generate the commit message. -->
 
 ## Known Issues
 
@@ -110,5 +122,11 @@ There are currently no known issues. If you encounter any problems, please open 
 
 - [Pieces for Developer Documentation](https://docs.pieces.app/)
 - [Commit AI - Pieces for Developers GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
+
+## Note
+
+**This extension is a community project and not officially supported by Pieces for Developers team.** <img src="https://cdn.discordapp.com/emojis/1099134036481413140.gif?size=40">
+
+---
 
 **Happy coding with Commit AI - Pieces for Developers!**
