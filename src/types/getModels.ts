@@ -9,12 +9,12 @@
  * @throws {Error} If the selected model is not available.
  */
 import * as Pieces from '@pieces.app/pieces-os-client'; // Import client Pieces
-import { configurationPort } from "./os";
 import { config } from '../config';
 
 
 // Configure the Models API instance
-const modelsApiInstance = new Pieces.ModelsApi(configurationPort);
+const { configurationUrl } = config.inference;
+const modelsApiInstance = new Pieces.ModelsApi(configurationUrl);
 
 // Define a function to get the selected model
 export const getSelectedModel = async (): Promise<string> => {
