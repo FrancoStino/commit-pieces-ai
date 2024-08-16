@@ -1,11 +1,4 @@
 <link rel="stylesheet" href="./assets/readme.css">
-<style>
-  a {
-    text-decoration: none !important;
-    
-  }
-
-  </style>
 
 <div align="center">
 
