@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="/assets/readme.css">
 <div align="center">
 
 # Commit AI - Pieces for Developers
