@@ -1,4 +1,9 @@
-<link rel="stylesheet" href="/assets/readme.css">
+<link rel="stylesheet" href="./assets/readme.css">
+<style>
+  a:link {
+    text-decoration: none !important;
+  }
+
 <div align="center">
 
 # Commit AI - Pieces for Developers
