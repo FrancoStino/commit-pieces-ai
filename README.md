@@ -91,9 +91,9 @@ This extension contributes the following settings:
 
 `gpt-4o-mini`
 
-Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
+- Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
-Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
+- Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
  "commit-pieces-ai.commitEmojis": {
