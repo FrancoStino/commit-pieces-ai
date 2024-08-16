@@ -1,3 +1,27 @@
+## [v1.2.0] - 2024-08-16
+### New Features
+- [`3ff620a`](https://github.com/FrancoStino/commit-pieces-ai/commit/3ff620a8b7915e76c6bbcafa1574f54223996c73) - Add Google logo with link to README *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Bug Fixes
+- [`cfb648b`](https://github.com/FrancoStino/commit-pieces-ai/commit/cfb648bf71489b9f6f4f37431d807d4747d65b02) - minor fix *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Refactors
+- [`13cfeda`](https://github.com/FrancoStino/commit-pieces-ai/commit/13cfedae0f714d906f55ed8373c74c7f1afd547d) - Update config loading and Pieces OS client setup *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`9352a0b`](https://github.com/FrancoStino/commit-pieces-ai/commit/9352a0b2535d45ff244b7c0eabd7a102dbafde74) - Update API config and error handling in generators *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Code Style Changes
+- [`b967e4b`](https://github.com/FrancoStino/commit-pieces-ai/commit/b967e4b711070cc7695e88360f19dcbc58b86a9e) - Remove emoji prefixes from changelog headers *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`9abc4dc`](https://github.com/FrancoStino/commit-pieces-ai/commit/9abc4dc84bac8938c7481c69781f7f95e564ffd8) - Remove text decoration from anchor tags *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`8be32a9`](https://github.com/FrancoStino/commit-pieces-ai/commit/8be32a9611d971933103e19da1d2c3e087f11697) - Add color inheritance and bold to anchor tags *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`7c28db8`](https://github.com/FrancoStino/commit-pieces-ai/commit/7c28db83643a6eba3d2a4d608d0081e29d80a1c0) - Add global link styling and CSS variable *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Chores
+- [`9704d0e`](https://github.com/FrancoStino/commit-pieces-ai/commit/9704d0e9f74a0352d3c5369f782d44dcb08ad3be) - bump version to 1.2.0 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Other Changes
+- [`4d80db5`](https://github.com/FrancoStino/commit-pieces-ai/commit/4d80db5572b6d012865a8b75c26aef77921f7b4d) - Merge branch 'develop' of https://github.com/FrancoStino/commit-pieces-ai into develop *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.1.4] - 2024-08-09
 ### Chores
 - [`5db4b58`](https://github.com/FrancoStino/commit-pieces-ai/commit/5db4b58dc49fc353d1297ef7a2e79fcfc78b5219) - update dependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -84,3 +108,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.1.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.1...v1.1.2
 [v1.1.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.2...v1.1.3
 [v1.1.4]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.3...v1.1.4
+[v1.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.4...v1.2.0
