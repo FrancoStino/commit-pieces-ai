@@ -8,6 +8,9 @@
 
 ---
 
+[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)
+[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)
+
   <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none !important;">
     <img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Version">
   </a>
