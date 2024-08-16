@@ -1,18 +1,18 @@
-import * as vscode from "vscode";  // Import the vscode module
 import { config } from "./config";  // Import the custom configuration
 import * as Pieces from '@pieces.app/pieces-os-client';  //Import client Pieces
-import { configurationPort } from "./types/os";
 import { getSelectedModel } from './types/getModels';
 
-
-// Configure the API instance
-const apiInstance = new Pieces.QGPTApi(configurationPort);
 
 // Define a function to get the summary
 export async function getSummary(diff: string): Promise<string> {
 
-    const { summaryPrompt, summaryTemperature } =
-        config.inference;
+    const {
+        summaryPrompt,
+        configurationUrl
+        // summaryTemperature
+    } = config.inference;
+
+    const apiInstance = new Pieces.QGPTApi(configurationUrl);
 
     const selectedModelId = await getSelectedModel();
 
@@ -60,37 +60,23 @@ export async function getSummary(diff: string): Promise<string> {
         }
 
     } catch (error: any) {
-        if (error?.status_code === 404) {
-            const errorMessage =
-                error.message.charAt(0).toUpperCase() + error.message.slice(1);
+        console.error(`Error: ${error.message}, statusCode: ${error?.status_code}`);
 
-            vscode.window
-                .showErrorMessage(errorMessage, "Go to Pieces website")
-                .then((action) => {
-                    if (action === "Go to Pieces website") {
-                        vscode.env.openExternal(
-                            vscode.Uri.parse("https://pieces.app/"),
-                        );
-                    }
-                });
-
-            throw new Error();
-        }
-
-        throw new Error(
-            "Unable to connect to Pieces OS. Please, check that Pieces OS is running.",
-        );
+        throw new Error(`Error calling API: ${error.message} (Status code: ${error.status_code || 'Unknown'})`);
     }
 }
 
 
 export async function getCommitMessage(summaries: string[]) {
     const {
+        configurationUrl,
         commitPrompt,
         // commitTemperature,
         useEmojis,
         commitEmojis,
     } = config.inference;
+
+    const apiInstance = new Pieces.QGPTApi(configurationUrl);
 
     const selectedModelId = await getSelectedModel();
 
@@ -128,7 +114,7 @@ export async function getCommitMessage(summaries: string[]) {
             const firstAnswer = result.answers.iterable[0];
 
             if (firstAnswer && firstAnswer.text) {
-                var commit = firstAnswer.text.replace(/["`]/g, "");
+                let commit = firstAnswer.text.replace(/["`]/g, "");
 
                 // Add the emoji to the commit if activated
                 if (useEmojis) {
@@ -147,8 +133,8 @@ export async function getCommitMessage(summaries: string[]) {
             throw new Error('No answers found');
         }
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('Error calling API:', error);
-        throw error;
+        throw new Error(`Error calling API: ${error.message} (Status code: ${error.status_code || 'Unknown'})`);
     }
 }
