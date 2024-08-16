@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./assets/readme.css">
-
 <div align="center">
 
 # Commit AI - Pieces for Developers
@@ -8,25 +6,21 @@
 
 ---
 
-[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)
-[<img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge">](https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai)
+[![Version][version-badge]][marketplace-url]
+[![Installs][installs-badge]][marketplace-url]
+[![Rating][rating-badge]][marketplace-url]
+[![License][license-badge]][license-url]
+[![Pieces for Developers][pieces-badge]][pieces-url]
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Version">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Installs">
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Rating">
-  </a>
-  <a href="https://github.com/FrancoStino/commit-pieces-ai/blob/main/LICENSE" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/github/license/FrancoStino/commit-pieces-ai?style=for-the-badge" alt="GitHub license">
-  </a>
-  <a href="https://pieces.app/" style="text-decoration: none !important;">
-    <img src="https://img.shields.io/badge/pieces-for%20developers-191919?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAB3UlEQVQoz11TTWgTQRj9IGya7UpEPMVuLagYkQr%20QOpRtOBJBBc8eyqCIHgrrYRiipeCCF715E2rULEU3cZWIqXUCtp68Kg0a8EF0WgS7TrveZidZDff6c03b773zTdvROJwxBusToXv%20Y8kqcKNWsUbcqQnhrN%20OWqyJ6KWXznWl6CV8sFLs6nYYAOqQ64vlfaYalbwQif%2F8g6KyDDDI5jBn5j6dXmkT0Tysj6pEy2eR4F3sYmPuIcBnoXpZXXaEbmyL%2FqllzdwEAGM5DaLuG5WratDUr2p8Q%2FafIbkVXzY%2FB7j2rSEbzVcQp5tfsElnMYsSHKHe7EQHw03hTsazilXkRcxigpy3AIJunhsNJQYoSfKVeBR9RCkjTcgt2Bxo9NMh%2FiIriJP4AGIfvWa5DWcRLfpjvSschU5hlG00a8WOAGHK12eknBNo6fKVWSdh3gAGea4H4uJGYQfpDah4XM1oEjyJ%20%2FDwm20Uq9euyVjhahBkqvIcRsk%20RkZfkpNNGp6g%20LIq3FthlM4gxUsYwTnkOJxfSovInLcCudJss4LyMLGZXxL0YLF4ayx2a5gXiebaKeLse6XdiccediaGzfmSPT22y8Xsz0et8UrVCeDtXiuUfiuWvbc7lf4Dx%2FMT2rumNvaAAAAAElFTkSuQmCC" alt="Pieces for Developers">
-  </a>
-  
+[version-badge]: https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge
+[installs-badge]: https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge
+[rating-badge]: https://img.shields.io/visual-studio-marketplace/r/DavideLadisa.commit-pieces-ai?style=for-the-badge
+[license-badge]: https://img.shields.io/github/license/FrancoStino/commit-pieces-ai?style=for-the-badge
+[pieces-badge]: https://img.shields.io/badge/pieces-for%20developers-191919?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAB3UlEQVQoz11TTWgTQRj9IGya7UpEPMVuLagYkQr%20QOpRtOBJBBc8eyqCIHgrrYRiipeCCF715E2rULEU3cZWIqXUCtp68Kg0a8EF0WgS7TrveZidZDff6c03b773zTdvROJwxBusToXv%20Y8kqcKNWsUbcqQnhrN%20OWqyJ6KWXznWl6CV8sFLs6nYYAOqQ64vlfaYalbwQif%2F8g6KyDDDI5jBn5j6dXmkT0Tysj6pEy2eR4F3sYmPuIcBnoXpZXXaEbmyL%2FqllzdwEAGM5DaLuG5WratDUr2p8Q%2FafIbkVXzY%2FB7j2rSEbzVcQp5tfsElnMYsSHKHe7EQHw03hTsazilXkRcxigpy3AIJunhsNJQYoSfKVeBR9RCkjTcgt2Bxo9NMh%2FiIriJP4AGIfvWa5DWcRLfpjvSschU5hlG00a8WOAGHK12eknBNo6fKVWSdh3gAGea4H4uJGYQfpDah4XM1oEjyJ%20%2FDwm20Uq9euyVjhahBkqvIcRsk%20RkZfkpNNGp6g%20LIq3FthlM4gxUsYwTnkOJxfSovInLcCudJss4LyMLGZXxL0YLF4ayx2a5gXiebaKeLse6XdiccediaGzfmSPT22y8Xsz0et8UrVCeDtXiuUfiuWvbc7lf4Dx%2FMT2rumNvaAAAAAElFTkSuQmCC
+[marketplace-url]: https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai
+[license-url]: https://github.com/FrancoStino/commit-pieces-ai/blob/main/LICENSE
+[pieces-url]: https://pieces.app/
+
 </div>
 
 ---
