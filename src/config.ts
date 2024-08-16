@@ -27,7 +27,7 @@ class Config {
 
         // Load Url
         const piecesConfig = workspace.getConfiguration("pieces");
-        let piecesCustomUrl = piecesConfig.get("customUrl") as string;
+        const piecesCustomUrl = piecesConfig.get("customUrl") as string;
         let url: string = piecesCustomUrl || `http://localhost:${port}`
         if (url.endsWith("/")) {
             url = url.slice(0, -1).trim()
