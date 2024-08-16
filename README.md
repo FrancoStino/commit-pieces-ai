@@ -1,3 +1,4 @@
+<link href="./assets/readme.css" rel="stylesheet"></link> 
 <div align="center">
 
 # Commit AI - Pieces for Developers
@@ -6,19 +7,19 @@
 
 ---
 
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none;">
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
     <img src="https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Version">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none;">
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
     <img src="https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Installs">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai" style="text-decoration: none;">
+  <a href="https://marketplace.visualstudio.com/items?itemName=DavideLadisa.commit-pieces-ai">
     <img src="https://img.shields.io/visual-studio-marketplace/r/DavideLadisa.commit-pieces-ai?style=for-the-badge" alt="Visual Studio Marketplace Rating">
   </a>
-  <a href="https://github.com/FrancoStino/commit-pieces-ai/blob/main/LICENSE" style="text-decoration: none;">
+  <a href="https://github.com/FrancoStino/commit-pieces-ai/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/FrancoStino/commit-pieces-ai?style=for-the-badge" alt="GitHub license">
   </a>
-  <a href="https://pieces.app/" style="text-decoration: none;">
+  <a href="https://pieces.app/">
     <img src="https://img.shields.io/badge/pieces-for%20developers-191919?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAB3UlEQVQoz11TTWgTQRj9IGya7UpEPMVuLagYkQr%20QOpRtOBJBBc8eyqCIHgrrYRiipeCCF715E2rULEU3cZWIqXUCtp68Kg0a8EF0WgS7TrveZidZDff6c03b773zTdvROJwxBusToXv%20Y8kqcKNWsUbcqQnhrN%20OWqyJ6KWXznWl6CV8sFLs6nYYAOqQ64vlfaYalbwQif%2F8g6KyDDDI5jBn5j6dXmkT0Tysj6pEy2eR4F3sYmPuIcBnoXpZXXaEbmyL%2FqllzdwEAGM5DaLuG5WratDUr2p8Q%2FafIbkVXzY%2FB7j2rSEbzVcQp5tfsElnMYsSHKHe7EQHw03hTsazilXkRcxigpy3AIJunhsNJQYoSfKVeBR9RCkjTcgt2Bxo9NMh%2FiIriJP4AGIfvWa5DWcRLfpjvSschU5hlG00a8WOAGHK12eknBNo6fKVWSdh3gAGea4H4uJGYQfpDah4XM1oEjyJ%20%2FDwm20Uq9euyVjhahBkqvIcRsk%20RkZfkpNNGp6g%20LIq3FthlM4gxUsYwTnkOJxfSovInLcCudJss4LyMLGZXxL0YLF4ayx2a5gXiebaKeLse6XdiccediaGzfmSPT22y8Xsz0et8UrVCeDtXiuUfiuWvbc7lf4Dx%2FMT2rumNvaAAAAAElFTkSuQmCC" alt="Pieces for Developers">
   </a>
   
@@ -42,9 +43,9 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 ![Commit Groq Demo](assets/commitpiecesai-demo.gif)
 
-- Automatic generation of commit messages based on modified code.
-- Code analysis for improvement suggestions before committing.
-- Seamless integration with Git workflow in VS Code.
+-   Automatic generation of commit messages based on modified code.
+-   Code analysis for improvement suggestions before committing.
+-   Seamless integration with Git workflow in VS Code.
 
 ## Usage
 
@@ -57,9 +58,9 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 This extension contributes the following settings:
 
-- "Run Commit Pieces for Developers": automatically generates a commit message for your commit.
+-   "Run Commit Pieces for Developers": automatically generates a commit message for your commit.
 
-- Model: You can select the model from the plugin configuration.
+-   Model: You can select the model from the plugin configuration.
 
 `chat-bison`
 
@@ -91,9 +92,9 @@ This extension contributes the following settings:
 
 `gpt-4o-mini`
 
-- Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
+-   Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
-- Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
+-   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
  "commit-pieces-ai.commitEmojis": {
@@ -108,11 +109,11 @@ This extension contributes the following settings:
 }
 ```
 
-- Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
+-   Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
-- Custom Commit Prompt: The prompt that will be used to generate the commit message.
+-   Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
-- Custom URL: URL to connect to a remote Pieces OS instance. Please read the [documentation](https://docs.pieces.app/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance) to ensure you need to use this. You need to configure this setting inside the [Pieces for VS Code](https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode) extension
+-   Custom URL: URL to connect to a remote Pieces OS instance. Please read the [documentation](https://docs.pieces.app/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance) to ensure you need to use this. You need to configure this setting inside the [Pieces for VS Code](https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode) extension
 
 ## Known Issues
 
@@ -122,8 +123,8 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ## For more information
 
-- [Pieces for Developer Documentation](https://docs.pieces.app/)
-- [Commit AI - Pieces for Developers GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
+-   [Pieces for Developer Documentation](https://docs.pieces.app/)
+-   [Commit AI - Pieces for Developers GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
 
 ## Note
 
