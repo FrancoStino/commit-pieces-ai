@@ -1,5 +1,10 @@
-a:link {
+a:link,
+a {
     text-decoration: none !important;
     color: inherit;
     font-weight: bold;
+}
+
+body {
+    --link-external-decoration: none;
 }
