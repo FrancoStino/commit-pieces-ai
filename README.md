@@ -112,6 +112,8 @@ This extension contributes the following settings:
 
 - Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
+- Custom URL: URL to connect to a remote Pieces OS instance. Please read the [documentation](https://docs.pieces.app/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance) to ensure you need to use this. You need to configure this setting inside the [Pieces for VS Code](https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode) extension
+
 ## Known Issues
 
 There are currently no known issues. If you encounter any problems, please open an issue on our GitHub repository.
