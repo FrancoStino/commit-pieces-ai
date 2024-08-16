@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./assets/readme.css">
 <style>
-  a:link {
+  a{
     text-decoration: none !important;
   }
 
