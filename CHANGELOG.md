@@ -1,3 +1,14 @@
+## [v1.2.1] - 2024-08-17
+### New Features
+- [`3ac4e1f`](https://github.com/FrancoStino/commit-pieces-ai/commit/3ac4e1ffe8a49adca1b31edc33fa77795741b507) - Update package version, add commit customization options *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Refactors
+- [`d3bd825`](https://github.com/FrancoStino/commit-pieces-ai/commit/d3bd825545e274da142d877ee4ca31a0490ccb24) - Improve summaries and commit messages functions *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Chores
+- [`0371b2d`](https://github.com/FrancoStino/commit-pieces-ai/commit/0371b2d0ff29e9144b716bba33608250b3526132) - update Yarn state and dependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.2.0] - 2024-08-16
 ### New Features
 - [`3ff620a`](https://github.com/FrancoStino/commit-pieces-ai/commit/3ff620a8b7915e76c6bbcafa1574f54223996c73) - Add Google logo with link to README *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -109,3 +120,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.1.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.2...v1.1.3
 [v1.1.4]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.3...v1.1.4
 [v1.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.4...v1.2.0
+[v1.2.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.2.0...v1.2.1
