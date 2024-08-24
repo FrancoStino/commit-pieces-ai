@@ -32,7 +32,7 @@ Commit AI - Pieces for Developers is a Visual Studio Code extension that uses th
 To use Commit Pieces for Developers AI, you need to install **[Pieces for Developers](https://pieces.app/)**. Follow these steps:
 
 1. You don't need any API key to use Commit Pieces for Developers.
-2. Click on the Sparkle icon in the Source Control icon in the VS Code toolbar.
+2. Click on the Sparkle icon in the Source Control icon in the VS Code toolbar for use it.
 3. Open the VS Code settings (File > Preferences > Settings).
 4. Search for "Commit Pieces for Developers" in the settings to customize it.
 5. Enjoy!
@@ -47,8 +47,10 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 ## Usage
 
+<!-- Insert icon svg Sparkle -->
+
 1. Make your code changes as usual.
-2. When you're ready to commit, use the "Run Commit Pieces for Developers" command from the command palette (Ctrl+Shift+P).
+2. When you're ready to commit, use icon "Sparkle" in the Source Control toolbar or you can use the "Run Commit Pieces for Developers" command from the command palette (Ctrl+Shift+P).
 3. The extension will generate a commit message based on your changes.
 4. Review and modify the message if necessary, then proceed with the commit.
 
