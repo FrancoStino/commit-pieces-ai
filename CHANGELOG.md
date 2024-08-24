@@ -1,3 +1,19 @@
+## [v1.3.0] - 2024-08-24
+### New Features
+- [`2b58d5c`](https://github.com/FrancoStino/commit-pieces-ai/commit/2b58d5c0375e6a2a3ebc835bcc2878e1716592c2) - Add optional description to commit messages *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`22e7336`](https://github.com/FrancoStino/commit-pieces-ai/commit/22e7336952586785ae2c95ebbfff2a9566518d41) - Add config option for descriptions in Config class *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`7b05e62`](https://github.com/FrancoStino/commit-pieces-ai/commit/7b05e62131e69159805f341e1c79c131be24052a) - Update version, title, config, and dependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Bug Fixes
+- [`9044cc7`](https://github.com/FrancoStino/commit-pieces-ai/commit/9044cc7c99800b287362019754f42d5910f3561f) - Add missing semicolon to commit message logic *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Refactors
+- [`12a78ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/12a78baad334d8084cf760783f02a8efd0644b83) - Update Git interfaces with new properties/methods *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Chores
+- [`e4dc077`](https://github.com/FrancoStino/commit-pieces-ai/commit/e4dc077fde29f9979351d59d4fd89410194304be) - update and regenerate yarn.lock file *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.2.1] - 2024-08-17
 ### New Features
 - [`3ac4e1f`](https://github.com/FrancoStino/commit-pieces-ai/commit/3ac4e1ffe8a49adca1b31edc33fa77795741b507) - Update package version, add commit customization options *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -121,3 +137,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.1.4]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.3...v1.1.4
 [v1.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.4...v1.2.0
 [v1.2.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.2.0...v1.2.1
+[v1.3.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.2.1...v1.3.0
