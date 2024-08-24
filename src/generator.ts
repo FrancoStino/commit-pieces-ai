@@ -105,7 +105,7 @@ export async function getCommitMessage(summaries: string[]): Promise<string> {
 
             // Add files summaries as description if useDescription is activated
             if (useDescription) {
-                commit = `${commit}\n\n${summaries.map((s) => `- ${s}`).join("\n")}`
+                commit = `${commit}\n\n${summaries.map((s) => `- ${s}`).join("\n")}`;
             }
 
             return commit;
