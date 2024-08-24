@@ -18,6 +18,9 @@ class Config {
         const commitEmojis: string[] =
             config.get("commitEmojis") as string[];
 
+        const useDescription: boolean =
+            config.get("useDescription") as boolean;
+
         /**
          * Configures the Pieces OS client with the appropriate base path based on the current platform.
          * On Linux, the base path is set to `http://localhost:5323`, while on other platforms it is set to `http://localhost:1000`.
@@ -51,6 +54,7 @@ class Config {
             // commitTemperature,
             useEmojis,
             commitEmojis,
+            useDescription,
             configurationUrl,
         };
     }
