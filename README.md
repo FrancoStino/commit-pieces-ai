@@ -2,7 +2,7 @@
 
 # Commit AI - Pieces for Developers
 
-<img src="assets/icon.png" width="25%">
+<img src="assets/icon.png" width="35%">
 
 ---
 
