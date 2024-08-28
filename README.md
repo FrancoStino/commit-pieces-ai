@@ -72,94 +72,94 @@ This extension contributes the following settings:
     <tbody>
         <tr>
             <td><code>chat-bison</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-5-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-haiku</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-opus</code></td>
             <td>
-            <img src="/assets/claude-ai-icon.svg" width="20"/>
+            <img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code>
             </td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>codechat-bison</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-flash</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-pro</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-pro</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo</code></td>
             <td>
-            <img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo-16k</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4-turbo</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o-mini</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
