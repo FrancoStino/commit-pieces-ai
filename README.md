@@ -118,7 +118,7 @@ This extension contributes the following settings:
         <tr>
             <td><code>gpt-3.5-turbo</code></td>
             <td>
-            ![My Happy SVG](/assets/chatgpt-seeklogo.svg "My Happy SVG")
+            <img src="/assets/chatgpt-seeklogo.svg" alt="My Happy SVG" width="20"/>
  <code>OpenAI</code></td>
             <td>Cloud</td>
         </tr>
