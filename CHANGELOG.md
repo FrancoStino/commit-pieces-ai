@@ -1,3 +1,12 @@
+## [v1.3.1] - 2024-08-28
+### New Features
+- [`3305b35`](https://github.com/FrancoStino/commit-pieces-ai/commit/3305b35e553400dc990b74f0a4f7220a220e8465) - new logo for extension *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`06c43e4`](https://github.com/FrancoStino/commit-pieces-ai/commit/06c43e436320bd9344c19c78c21c3645915256ec) - Add icons for providers in settings table *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Chores
+- [`669ce3d`](https://github.com/FrancoStino/commit-pieces-ai/commit/669ce3d1ed82ee4d033a293356c7728fe79de985) - Update version to 1.3.1 *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v1.3.0] - 2024-08-24
 ### New Features
 - [`2b58d5c`](https://github.com/FrancoStino/commit-pieces-ai/commit/2b58d5c0375e6a2a3ebc835bcc2878e1716592c2) - Add optional description to commit messages *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -138,3 +147,4 @@ Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
 [v1.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.1.4...v1.2.0
 [v1.2.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.2.0...v1.2.1
 [v1.3.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.2.1...v1.3.0
+[v1.3.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.0...v1.3.1
