@@ -58,41 +58,103 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 This extension contributes the following settings:
 
--   Model: You can select the model from the plugin configuration.
+- Model: You can select the model from the plugin configuration:
 
-`chat-bison`
+<style>
+td {
+vertical-align: middle;
+}
+</style>
+<table>
+    <thead>
+        <tr>
+            <th>Models</th>
+            <th>Provider</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>chat-bison</code></td>
+            <td></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>claude-3-5-sonnet</code></td>
+            <td><code>Anthropic</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>claude-3-haiku</code></td>
+            <td><code>Anthropic</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>claude-3-opus</code></td>
+            <td><code>Anthropic</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>claude-3-sonnet</code></td>
+            <td><code>Anthropic</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>codechat-bison</code></td>
+            <td><code>Google</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gemini-1.5-flash</code></td>
+            <td><code>Google</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gemini-1.5-pro</code></td>
+            <td><code>Google</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gemini-pro</code></td>
+            <td><code>Google</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-3.5-turbo</code></td>
+            <td><img src="/assets/chatgpt-seeklogo.svg" alt="My Happy SVG" width="20"/> <code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-3.5-turbo-16k</code></td>
+            <td><code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-4</code></td>
+            <td><code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-4-turbo</code></td>
+            <td><code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-4o</code></td>
+            <td><code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+        <tr>
+            <td><code>gpt-4o-mini</code></td>
+            <td><code>OpenAI</code></td>
+            <td>Cloud</td>
+        </tr>
+    </tbody>
+</table>
 
-`claude-3-5-sonnet@20240620`
+- Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
-`claude-3-haiku@20240307`
-
-`claude-3-opus@20240229`
-
-`claude-3-sonnet@20240229`
-
-`codechat-bison`
-
-`gemini-1.5-flash`
-
-`gemini-1.5-pro`
-
-`gemini-pro`
-
-`gpt-3.5-turbo`
-
-`gpt-3.5-turbo-16k`
-
-`gpt-4`
-
-`gpt-4-turbo`
-
-`gpt-4o` - default
-
-`gpt-4o-mini`
-
--   Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
-
--   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
+- Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
  "commit-pieces-ai.commitEmojis": {
@@ -107,11 +169,11 @@ This extension contributes the following settings:
 }
 ```
 
--   Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
+- Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
--   Custom Commit Prompt: The prompt that will be used to generate the commit message.
+- Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
--   Use Description: It allows you to enable or disable the use of commit description.
+- Use Description: It allows you to enable or disable the use of commit description.
 
 ## Known Issues
 
@@ -124,9 +186,10 @@ There are currently no known issues. If you encounter any problems, please open 
 -   [Pieces for Developer Documentation](https://docs.pieces.app/)
 -   [Commit AI - Pieces for Developers GitHub Repository](https://github.com/FrancoStino/commit-pieces-ai)
 
-## Note
+---
 
-**This extension is a community project and not officially supported by Pieces for Developers team.** <img src="https://cdn.discordapp.com/emojis/1099134036481413140.gif?size=40">
+>## Note
+>**This extension is a community project and not officially supported by Pieces for Developers team.** <img src="https://cdn.discordapp.com/emojis/1099134036481413140.gif?size=40">
 
 ---
 
