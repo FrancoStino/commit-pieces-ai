@@ -13,7 +13,7 @@
 [![Pieces for Developers][pieces-badge]][pieces-url]
 
 [version-badge]: https://img.shields.io/visual-studio-marketplace/v/DavideLadisa.commit-pieces-ai?style=for-the-badge
-[installs-badge]: https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge
+[installs-badge]: https://img.shields.io/visual-studio-marketplace/i/DavideLadisa.commit-pieces-ai?style=for-the-badge&color=red
 [rating-badge]: https://img.shields.io/visual-studio-marketplace/r/DavideLadisa.commit-pieces-ai?style=for-the-badge
 [license-badge]: https://img.shields.io/github/license/FrancoStino/commit-pieces-ai?style=for-the-badge
 [pieces-badge]: https://img.shields.io/badge/pieces-for%20developers-191919?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAB3UlEQVQoz11TTWgTQRj9IGya7UpEPMVuLagYkQr%20QOpRtOBJBBc8eyqCIHgrrYRiipeCCF715E2rULEU3cZWIqXUCtp68Kg0a8EF0WgS7TrveZidZDff6c03b773zTdvROJwxBusToXv%20Y8kqcKNWsUbcqQnhrN%20OWqyJ6KWXznWl6CV8sFLs6nYYAOqQ64vlfaYalbwQif%2F8g6KyDDDI5jBn5j6dXmkT0Tysj6pEy2eR4F3sYmPuIcBnoXpZXXaEbmyL%2FqllzdwEAGM5DaLuG5WratDUr2p8Q%2FafIbkVXzY%2FB7j2rSEbzVcQp5tfsElnMYsSHKHe7EQHw03hTsazilXkRcxigpy3AIJunhsNJQYoSfKVeBR9RCkjTcgt2Bxo9NMh%2FiIriJP4AGIfvWa5DWcRLfpjvSschU5hlG00a8WOAGHK12eknBNo6fKVWSdh3gAGea4H4uJGYQfpDah4XM1oEjyJ%20%2FDwm20Uq9euyVjhahBkqvIcRsk%20RkZfkpNNGp6g%20LIq3FthlM4gxUsYwTnkOJxfSovInLcCudJss4LyMLGZXxL0YLF4ayx2a5gXiebaKeLse6XdiccediaGzfmSPT22y8Xsz0et8UrVCeDtXiuUfiuWvbc7lf4Dx%2FMT2rumNvaAAAAAElFTkSuQmCC
@@ -58,8 +58,7 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 This extension contributes the following settings:
 
-- Model: You can select the model from the plugin configuration:
-
+-   Model: You can select the model from the plugin configuration:
 
 <table>
     <thead>
@@ -72,103 +71,103 @@ This extension contributes the following settings:
     <tbody>
         <tr>
             <td><code>chat-bison</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-5-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-haiku</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-opus</code></td>
             <td>
-            <img src="/assets/claude-ai-icon.svg" width="20"/>
+            <img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code>
             </td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.svg" width="20"/>
+            <td><img src="/assets/claude-ai-icon.png" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>codechat-bison</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-flash</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-pro</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-pro</code></td>
-            <td><img src="/assets/google.svg" width="20"/>
+            <td><img src="/assets/google.png" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo</code></td>
             <td>
-            <img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo-16k</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4-turbo</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o-mini</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.svg" width="20"/>
+            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
     </tbody>
 </table>
 
-- Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
+-   Use Emojis: It allows you to enable or disable the use of emojis in commit messages.
 
-- Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
+-   Custom Emojis: It allows you to write down the emojis you want to use in the next template object in the VSCode config.json.
 
 ```json
  "commit-pieces-ai.commitEmojis": {
@@ -183,11 +182,11 @@ This extension contributes the following settings:
 }
 ```
 
-- Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
+-   Custom Summary Prompt: The prompt that will be used to generate the summary of all git diff.
 
-- Custom Commit Prompt: The prompt that will be used to generate the commit message.
+-   Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
-- Use Description: It allows you to enable or disable the use of commit description.
+-   Use Description: It allows you to enable or disable the use of commit description.
 
 ## Known Issues
 
@@ -202,8 +201,9 @@ There are currently no known issues. If you encounter any problems, please open 
 
 ---
 
->## Note
->**This extension is a community project and not officially supported by Pieces for Developers team.** <img src="https://cdn.discordapp.com/emojis/1099134036481413140.gif?size=40">
+> ## Note
+>
+> **This extension is a community project and not officially supported by Pieces for Developers team.** <img src="https://cdn.discordapp.com/emojis/1099134036481413140.gif?size=40">
 
 ---
 
