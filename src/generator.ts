@@ -60,7 +60,15 @@ export async function getSummary(diff: string): Promise<string> {
  * @return {Promise<string>} A promise that resolves to the generated commit message.
  */
 export async function getCommitMessage(summaries: string[]): Promise<string> {
-    const { configurationUrl, commitPrompt, useEmojis, commitEmojis, useDescription } = config.inference;
+    const {
+        configurationUrl,
+        commitPrompt,
+        useEmojis,
+        commitEmojis,
+        useDescription,
+        forceCommitLowerCase,
+        forceCommitWithoutDotsAtEnd
+    } = config.inference;
     const apiInstance = new Pieces.QGPTApi(configurationUrl);
     const selectedModelId = await getSelectedModel();
 
@@ -93,7 +101,15 @@ export async function getCommitMessage(summaries: string[]): Promise<string> {
         const result = await apiInstance.question({ qGPTQuestionInput: params });
 
         if (result.answers?.iterable?.[0]?.text) {
-            let commit = result.answers.iterable[0].text.replace(/["`]/g, "").trim();
+            let commit = result.answers?.iterable?.[0]?.text?.replace(/["`]/g, "") || "";
+
+            if (forceCommitLowerCase) {
+                commit = commit.toLowerCase();
+            }
+
+            if (forceCommitWithoutDotsAtEnd) {
+                commit = commit.replace(/\.$/, "");
+            }
 
             if (useEmojis) {
                 const emojisMap = new Map(Object.entries(commitEmojis));
@@ -105,10 +121,12 @@ export async function getCommitMessage(summaries: string[]): Promise<string> {
 
             // Add files summaries as description if useDescription is activated
             if (useDescription) {
-                commit = `${commit}\n\n${summaries.map((s) => `- ${s}`).join("\n")}`;
+                const descriptionLines = summaries.map(s => `- ${s}`);
+                const description = descriptionLines.join('\n');
+                commit = `${commit}\n\n${description}`;
             }
 
-            return commit;
+            return commit.trim();
         } else {
             throw new Error('No valid answer found');
         }
