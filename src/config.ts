@@ -45,6 +45,8 @@ class Config {
         // const summaryTemperature = config.get("custom.summaryTemperature") as number;
         const commitPrompt = config.get("custom.commitPrompt") as string;
         // const commitTemperature = config.get("custom.commitTemperature") as number;
+        const forceCommitLowerCase = config.get('forceCommitLowerCase') as boolean;
+        const forceCommitWithoutDotsAtEnd = config.get('forceCommitWithoutDotsAtEnd') as boolean;
 
         return {
             modelName,
@@ -56,6 +58,8 @@ class Config {
             commitEmojis,
             useDescription,
             configurationUrl,
+            forceCommitLowerCase,
+            forceCommitWithoutDotsAtEnd
         };
     }
 

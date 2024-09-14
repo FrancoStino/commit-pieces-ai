@@ -2,7 +2,7 @@
     "name": "commit-pieces-ai",
     "displayName": "Commit AI - Pieces for Developers",
     "description": "Generative Commit AI with Pieces for Developers",
-    "version": "1.3.1",
+    "version": "1.5.0",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.92.0"
@@ -107,6 +107,18 @@
                         "default": "",
                         "description": "Custom prompt for commit message.",
                         "order": 6
+                    },
+                    "commit-pieces-ai.forceCommitLowerCase": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be lowercase.",
+                        "order": 7
+                    },
+                    "commit-pieces-ai.forceCommitWithoutDotsAtEnd": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be without dot at the end.",
+                        "order": 8
                     }
                 }
             }
