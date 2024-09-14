@@ -1,6 +1,6 @@
 on:
   workflow_run:
-    workflows: ['Changelog']
+    workflows: ['Sync multiple branches']
     types:
       - completed
 
