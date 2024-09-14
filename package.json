@@ -107,6 +107,18 @@
                         "default": "",
                         "description": "Custom prompt for commit message.",
                         "order": 6
+                    },
+                    "commit-pieces-ai.forceCommitLowerCase": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be lowercase.",
+                        "order": 7
+                    },
+                    "commit-pieces-ai.forceCommitWithoutDotsAtEnd": {
+                        "type": "boolean",
+                        "default": false,
+                        "description": "Enable or disable the commit message to be without dot at the end.",
+                        "order": 8
                     }
                 }
             }
