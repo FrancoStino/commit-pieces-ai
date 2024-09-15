@@ -7,23 +7,19 @@ on:
             - completed
 
 jobs:
-    sync-branch:
+    merge:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@master
+            - name: Checkout repository
+              uses: actions/checkout@v3
 
-            - name: Merge development -> staging
-              uses: devmasx/merge-branch@master
-              with:
-                  type: now
-                  from_branch: main
-                  target_branch: staging
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Merge staging -> uat
-              uses: devmasx/merge-branch@master
-              with:
-                  type: now
-                  from_branch: develop
-                  target_branch: uat
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
+            - name: Merge main into develop
+              run: |
+                  git config user.name "github-actions"
+                  git config user.email "actions@github.com"
+                  git checkout develop
+                  git pull origin develop
+                  git merge origin/main
+                  git push origin develop
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
