@@ -7,14 +7,18 @@ on:
             - completed
 
 jobs:
-    merge-branch:
+    update-cms-master:
+        name: Merge master into release after a PR is merged
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@master
-
-            - name: Merge main -> develop
-              uses: devmasx/merge-branch@master
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: merge
+              uses: mtanzi/action-automerge@v1
+              id: merge
               with:
-                  type: now
-                  target_branch: develop
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  github_token: ${{ github.token }}
+                  source: 'main'
+                  target: 'develop'
+                  webhook_url: #if present add the Slack webhook
+
