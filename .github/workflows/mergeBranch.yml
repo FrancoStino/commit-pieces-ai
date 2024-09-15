@@ -1,0 +1,19 @@
+name: Sync multiple branches
+
+on:
+    workflow_run:
+        workflows: ['Changelog']
+        types:
+            - completed
+
+jobs:
+    synchronise-release:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  ref: 'develop'
+                  fetch-depth: 0
+            - uses: prompt/actions-merge-branch@v2
+              with:
+                  from: 'origin/main'
