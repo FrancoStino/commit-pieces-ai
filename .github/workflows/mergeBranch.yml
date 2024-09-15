@@ -7,23 +7,21 @@ on:
             - completed
 
 jobs:
-    merge:
+    merge-main-to-develop:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout repository
-              uses: actions/checkout@v3
+            - name: Checkout code
+              uses: actions/checkout@v2
               with:
-                  fetch-depth: 0 # Questo è importante per ottenere tutti i branch e la cronologia completa
+                  fetch-depth: 0
 
-            - name: List branches
-              run: git branch -a
-
-            - name: Merge main into develop
+            - name: Configure Git
               run: |
-                  git config user.name "github-actions"
-                  git config user.email "actions@github.com"
-                  git fetch origin # Assicurati di avere gli ultimi aggiornamenti
-                  git checkout develop || git checkout -b develop # Crea il branch se non esiste
-                  git pull origin develop
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
+
+            - name: Merge main to develop
+              run: |
+                  git checkout develop
                   git merge origin/main
                   git push origin develop
