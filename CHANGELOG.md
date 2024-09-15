@@ -1,26 +1,3 @@
-## [v1.5.0] - 2024-09-15
-### New Features
-- [`0e128d6`](https://github.com/FrancoStino/commit-pieces-ai/commit/0e128d6ba2949d0bbfce591805ff8f2f6eb30dd7) - Add cloud capabilities and telemetry settings *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
-- [`5ea818f`](https://github.com/FrancoStino/commit-pieces-ai/commit/5ea818f96263220d2ccb169aa2966b0fcc08e680) - Bump version to 1.5.0. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-
-### Code Style Changes
-- [`e307508`](https://github.com/FrancoStino/commit-pieces-ai/commit/e3075085caececf2f9ce67a3ccfad31810763d98) - Enforce commit message casing and remove trailing dots *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`b60904f`](https://github.com/FrancoStino/commit-pieces-ai/commit/b60904f6ed6816cb898a5fc573e7b61d26a68d50) - Updates commit message generation. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`a41f91c`](https://github.com/FrancoStino/commit-pieces-ai/commit/a41f91c13077841ab79e0e4927d3f6b79b55500c) - Enforce commit message to be lowercase and without dots at the end *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-
-### Chores
-- [`af6056a`](https://github.com/FrancoStino/commit-pieces-ai/commit/af6056adab2b916a5bf32a32d9bf4dbd50192cf1) - Sync and publish workflows. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`293785b`](https://github.com/FrancoStino/commit-pieces-ai/commit/293785b13e6163c1e0bc2aba97aa2b5a97e25116) - Update changelog and modify GitHub Actions workflows *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`820549d`](https://github.com/FrancoStino/commit-pieces-ai/commit/820549d5b1a31ebce72a711356de230168d0b528) - Update workflow job and remove v1.5.0 changelog entries *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`5084a16`](https://github.com/FrancoStino/commit-pieces-ai/commit/5084a1625aa2a1a3bf783142b1de83f174019feb) - Update GitHub Actions workflow and rename job *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`49187bb`](https://github.com/FrancoStino/commit-pieces-ai/commit/49187bbd9ca36694e662c5ed2d46f69f2c6f0e86) - Update GitHub Actions to sync branches *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`e6715b2`](https://github.com/FrancoStino/commit-pieces-ai/commit/e6715b2e69dfa6e46e342df390fae3532409e119) - Update GitHub Actions workflow and changelog *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-- [`11e1288`](https://github.com/FrancoStino/commit-pieces-ai/commit/11e1288f3438e3cea29b3dcd105a9d49514c7afd) - Update GitHub Actions and clean changelog *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-
-### Other Changes
-- [`68ec950`](https://github.com/FrancoStino/commit-pieces-ai/commit/68ec950de39fc388002a23a80efb6ab0eb357e51) - Merge branch 'develop' *(commit by [@FrancoStino](https://github.com/FrancoStino))*
-
-
 ## [v1.3.1] - 2024-08-28
 
 ### New Features
@@ -207,4 +184,3 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
-[v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
