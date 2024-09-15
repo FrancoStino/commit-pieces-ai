@@ -27,6 +27,3 @@ jobs:
                   git pull origin develop
                   git merge origin/main
                   git push origin develop
-              env:
-                  GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # Usa il PAT invece del GITHUB_TOKEN predefinito
-
