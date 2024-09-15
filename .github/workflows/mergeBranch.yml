@@ -7,13 +7,14 @@ on:
             - completed
 
 jobs:
-    synchronise-release:
+    merge-branch:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@master
+
+            - name: Merge main -> develop
+              uses: devmasx/merge-branch@master
               with:
-                  ref: 'develop'
-                  fetch-depth: 0
-            - uses: prompt/actions-merge-branch@v2
-              with:
-                  from: 'origin/main'
+                  type: now
+                  target_branch: develop
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
