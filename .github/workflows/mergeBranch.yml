@@ -6,14 +6,22 @@ on:
         types:
             - completed
 
+permissions:
+    contents: write
+
 jobs:
     merge-main-to-develop:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout code
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
               with:
                   fetch-depth: 0
+
+            - name: Configure Git
+              run: |
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
 
             - name: Merge main to develop
               run: |
@@ -21,7 +29,4 @@ jobs:
                   git merge origin/main
 
             - name: Push changes
-              uses: ad-m/github-push-action@master
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  branch: develop
+              run: git push origin develop
