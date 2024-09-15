@@ -12,12 +12,18 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0 # Questo è importante per ottenere tutti i branch e la cronologia completa
+
+            - name: List branches
+              run: git branch -a
 
             - name: Merge main into develop
               run: |
                   git config user.name "github-actions"
                   git config user.email "actions@github.com"
-                  git checkout develop
+                  git fetch origin # Assicurati di avere gli ultimi aggiornamenti
+                  git checkout develop || git checkout -b develop # Crea il branch se non esiste
                   git pull origin develop
                   git merge origin/main
                   git push origin develop
