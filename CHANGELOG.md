@@ -1,3 +1,13 @@
+## [v2.0.1] - 2024-09-16
+### New Features
+- [`6f9dde6`](https://github.com/FrancoStino/commit-pieces-ai/commit/6f9dde688f5f51e073befa5bbfe1f2ea61d9a5e3) - Update image assets with new webp files *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`aed659b`](https://github.com/FrancoStino/commit-pieces-ai/commit/aed659b9261ea458cd3ba166c4bd416d47ad8e45) - Add command for fetching models, update package version *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`004851a`](https://github.com/FrancoStino/commit-pieces-ai/commit/004851a5807a112cdd72d25236c51da598e973d7) - Add functions to fetch and select models from API *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### Refactors
+- [`e411ccb`](https://github.com/FrancoStino/commit-pieces-ai/commit/e411ccbfaa16c2d82654ff26b367f26c0d6bb2e1) - Improve config management and add model command *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v1.5.0] - 2024-09-15
 ### New Features
 - [`0e128d6`](https://github.com/FrancoStino/commit-pieces-ai/commit/0e128d6ba2949d0bbfce591805ff8f2f6eb30dd7) - Add cloud capabilities and telemetry settings *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -213,3 +223,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
 [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
+[v2.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.5.0...v2.0.1
