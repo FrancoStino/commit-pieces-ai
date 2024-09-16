@@ -1,6 +1,9 @@
-import { config } from "./config";
-import { getSelectedModel } from './types/getModels';
+import { createConfig } from "./config";
 import * as Pieces from '@pieces.app/pieces-os-client';
+import { getSelectedModelid } from './types/getSelectedModelid';
+import * as vscode from 'vscode';
+
+
 
 /**
  * Generates a concise summary of the changes in a Git repository.
@@ -11,15 +14,22 @@ import * as Pieces from '@pieces.app/pieces-os-client';
  * @param {string} diff - The output of `git diff`, representing the changes in the repository.
  * @return {string} A concise one-sentence summary of the changes.
  */
-export async function getSummary(diff: string): Promise<string> {
+export async function getSummary(context: vscode.ExtensionContext, diff: string): Promise<string> {
 
     if (!diff || typeof diff !== 'string' || diff.trim() === '') {
         throw new Error('Invalid input: `diff` must be a non-empty string');
     }
 
-    const { summaryPrompt, configurationUrl } = config.inference;
+    const config = createConfig(context);
+    let inferenceConfig = await config.getInferenceConfig();
+
+    const { summaryPrompt, configurationUrl } = inferenceConfig;
+
+    const selectedModelId = await getSelectedModelid(context);
+
     const apiInstance = new Pieces.QGPTApi(configurationUrl);
-    const selectedModelId = await getSelectedModel();
+
+    console.log('Model id:', selectedModelId);
 
     const defaultSummaryPrompt = `You are an expert developer specialist in creating commits.
 	Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
@@ -59,7 +69,9 @@ export async function getSummary(diff: string): Promise<string> {
  * @param {string[]} summaries - An array of summaries of changes.
  * @return {Promise<string>} A promise that resolves to the generated commit message.
  */
-export async function getCommitMessage(summaries: string[]): Promise<string> {
+export async function getCommitMessage(context: vscode.ExtensionContext, summaries: string[]): Promise<string> {
+    const config = createConfig(context);
+    const inferenceConfig = await config.getInferenceConfig();
     const {
         configurationUrl,
         commitPrompt,
@@ -67,10 +79,12 @@ export async function getCommitMessage(summaries: string[]): Promise<string> {
         commitEmojis,
         useDescription,
         forceCommitLowerCase,
-        forceCommitWithoutDotsAtEnd
-    } = config.inference;
+        forceCommitWithoutDotsAtEnd,
+    } = inferenceConfig;
+
+    const selectedModelId = await getSelectedModelid(context);
+
     const apiInstance = new Pieces.QGPTApi(configurationUrl);
-    const selectedModelId = await getSelectedModel();
 
     const defaultCommitPrompt = `You are an expert developer specialist in creating commits messages.
 	Your only goal is to retrieve a single commit message. 
