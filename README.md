@@ -50,9 +50,19 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 <!-- Insert icon svg Sparkle -->
 
 1. Make your code changes as usual.
-2. When you're ready to commit, use icon "Sparkle" in the Source Control toolbar or you can use the "Run Commit Pieces for Developers" command from the command palette (Ctrl+Shift+P).
+2. When you're ready to commit, use icon "Sparkle" in the Source Control toolbar or you can use the `Commit AI - Pieces for Developers: Create Commit"` command from the command palette `CTRL+SHIFT+P` or `CMD+SHIFT+P`.
 3. The extension will generate a commit message based on your changes.
 4. Review and modify the message if necessary, then proceed with the commit.
+
+#### Get Models
+
+1. Go to settings -> Search for "Commit AI - Pieces for Developers" -> Model
+2. Click on link "Get Pieces for Developers Models"
+
+###### OR
+
+1. `CTRL+SHIFT+P` or `CMD+SHIFT+P`
+2. Type "Get Pieces for Developers Models"
 
 ## Settings
 
@@ -70,95 +80,95 @@ This extension contributes the following settings:
     </thead>
     <tbody>
         <tr>
-            <td><code>chat-bison</code></td>
-            <td><img src="/assets/google.png" width="20"/>
-            <code>Google</code></td>
-            <td><code>Cloud</code></td>
-        </tr>
-        <tr>
             <td><code>claude-3-5-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.png" width="20"/>
+            <td><img src="/assets/anthropic.webp" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-haiku</code></td>
-            <td><img src="/assets/claude-ai-icon.png" width="20"/>
+            <td><img src="/assets/anthropic.webp" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-opus</code></td>
             <td>
-            <img src="/assets/claude-ai-icon.png" width="20"/>
+            <img src="/assets/anthropic.webp" width="20"/>
             <code>Anthropic</code>
             </td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>claude-3-sonnet</code></td>
-            <td><img src="/assets/claude-ai-icon.png" width="20"/>
+            <td><img src="/assets/anthropic.webp" width="20"/>
             <code>Anthropic</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
+            <td><code>chat-bison</code></td>
+            <td><img src="/assets/google.webp" width="20"/>
+            <code>Google</code></td>
+            <td><code>Cloud</code></td>
+        </tr>
+        <tr>
             <td><code>codechat-bison</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-flash</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-1.5-pro</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gemini-pro</code></td>
-            <td><img src="/assets/google.png" width="20"/>
+            <td><img src="/assets/google.webp" width="20"/>
             <code>Google</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo</code></td>
             <td>
-            <img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-3.5-turbo-16k</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <td><img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <td><img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4-turbo</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <td><img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <td><img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
         <tr>
             <td><code>gpt-4o-mini</code></td>
-            <td><img src="/assets/chatgpt-seeklogo.png" width="20"/>
+            <td><img src="/assets/openai.webp" width="20"/>
             <code>OpenAI</code></td>
             <td><code>Cloud</code></td>
         </tr>
@@ -187,6 +197,10 @@ This extension contributes the following settings:
 -   Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
 -   Use Description: It allows you to enable or disable the use of commit description.
+
+-   Force Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
+
+-   Force Commit Without dot at the end: It allows you to enable or disable the commit message without dot at the end.
 
 ## Known Issues
 
