@@ -131,7 +131,7 @@
         "typescript": "^5.5.4"
     },
     "dependencies": {
-        "@pieces.app/pieces-os-client": "^4.0.0"
+        "@pieces.app/pieces-os-client": "^4.0.1"
     },
     "bugs": {
         "url": "https://github.com/FrancoStino/commit-pieces-ai/issues",
