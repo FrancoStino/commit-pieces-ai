@@ -221,7 +221,7 @@ export async function fetchModels(context: vscode.ExtensionContext) {
         });
 
         const cloudModels = modelsWithProvider.filter(model => model.cloud === true);
-        const localModels = modelsWithProvider.filter(model => model.cloud !== true && model.unique !== undefined);
+        const localModels = modelsWithProvider.filter(model => model.cloud !== true && model.downloaded === true);
 
         interface State {
             modelType: QuickPickItem;

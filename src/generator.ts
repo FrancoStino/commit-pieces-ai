@@ -1,5 +1,5 @@
 import { createConfig } from "./config";
-import * as Pieces from '@pieces.app/pieces-os-client';
+import { QGPTApi } from '@pieces.app/pieces-os-client';
 import { getSelectedModelid } from './types/getSelectedModelid';
 import * as vscode from 'vscode';
 
@@ -21,15 +21,16 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
     }
 
     const config = createConfig(context);
-    let inferenceConfig = await config.getInferenceConfig();
+    const inferenceConfig = await config.getInferenceConfig();
 
     const { summaryPrompt, configurationUrl } = inferenceConfig;
 
     const selectedModelId = await getSelectedModelid(context);
 
-    const apiInstance = new Pieces.QGPTApi(configurationUrl);
+    const apiInstance = new QGPTApi(configurationUrl);
 
     console.log('Model id:', selectedModelId);
+
 
     const defaultSummaryPrompt = `You are an expert developer specialist in creating commits.
 	Provide a super concise one sentence overall changes summary of the user \`git diff\` output following strictly the next rules:
@@ -50,6 +51,7 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
     try {
         const result = await apiInstance.question({ qGPTQuestionInput: params });
 
+        console.log('Success:', result);
         if (result.answers?.iterable?.[0]?.text) {
             return result.answers.iterable[0].text.trim().replace(/\n/g, ' ');
         } else {
@@ -84,7 +86,11 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
 
     const selectedModelId = await getSelectedModelid(context);
 
-    const apiInstance = new Pieces.QGPTApi(configurationUrl);
+    if (!selectedModelId) {
+        throw new Error('No model selected. Please select a model before proceeding.');
+    }
+
+    const apiInstance = new QGPTApi(configurationUrl);
 
     const defaultCommitPrompt = `You are an expert developer specialist in creating commits messages.
 	Your only goal is to retrieve a single commit message. 
@@ -104,6 +110,8 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
 
     const prompt = commitPrompt || defaultCommitPrompt;
     const fullQuery = `${prompt}\n\nHere are the summaries changes: ${summaries.join(", ")}`;
+    // const fullQuery = `Che modello usi? Da chi sei stato creato?`;
+
 
     const params = {
         query: fullQuery,

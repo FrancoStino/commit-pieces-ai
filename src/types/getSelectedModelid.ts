@@ -34,8 +34,8 @@ export async function getSelectedModelid(context: vscode.ExtensionContext): Prom
 
     try {
         const modelsSnapshot = await modelsApiInstance.modelsSnapshot();
-        const selectedModel = modelsSnapshot.iterable?.find(model => model.cloud && model.unique === selectedModelId);
-        console.log(selectedModel?.unique);
+        const selectedModel = modelsSnapshot.iterable?.find(model => model.unique === selectedModelId);
+        console.log('Model selected name:', selectedModel?.unique, 'ID:', selectedModel?.id);
 
         if (selectedModel) {
             return selectedModel.id;
