@@ -1,3 +1,8 @@
+## [v2.1.0] - 2024-10-05
+### New Features
+- [`9315097`](https://github.com/FrancoStino/commit-pieces-ai/commit/93150974e30d0f1ff648de839ed761f15f525c87) - Add multi-language commit message support *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v2.0.1] - 2024-09-16
 ### New Features
 - [`6f9dde6`](https://github.com/FrancoStino/commit-pieces-ai/commit/6f9dde688f5f51e073befa5bbfe1f2ea61d9a5e3) - Update image assets with new webp files *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -224,3 +229,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
     [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
 [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
 [v2.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.5.0...v2.0.1
+[v2.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.0.1...v2.1.0
