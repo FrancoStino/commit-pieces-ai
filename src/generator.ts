@@ -23,7 +23,7 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
     const config = createConfig(context);
     let inferenceConfig = await config.getInferenceConfig();
 
-    const { summaryPrompt, configurationUrl } = inferenceConfig;
+    const { summaryPrompt, configurationUrl, language } = inferenceConfig;
 
     const selectedModelId = await getSelectedModelid(context);
 
@@ -36,7 +36,8 @@ export async function getSummary(context: vscode.ExtensionContext, diff: string)
 	- Do not use any code snippets, imports, file routes or bullets points.
 	- Do not mention the route of file that has been change.
 	- Simply describe the MAIN GOAL of the changes.
-	- Output directly the summary in plain text.`;
+	- Output directly the summary in plain text.
+    - Translate all in ${language}.`.trim();
 
     const prompt = summaryPrompt || defaultSummaryPrompt;
     const fullQuery = `${prompt}\n\nHere is the \`git diff\` output: ${diff}`;
@@ -78,6 +79,7 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
         useEmojis,
         commitEmojis,
         useDescription,
+        language,
         forceCommitLowerCase,
         forceCommitWithoutDotsAtEnd,
     } = inferenceConfig;
@@ -100,7 +102,8 @@ export async function getCommitMessage(context: vscode.ExtensionContext, summari
 	refactor: When restructuring code without changing its external behavior, or is any of the other refactor types.
 	- Do not add any issues numeration, explain your output nor introduce your answer.
 	- Output directly only one commit message in plain text with the next format: \`{type}: {commit_message}\`.
-	- Be as concise as possible, keep the message under 50 characters.`
+	- Be as concise as possible, keep the message under 50 characters.
+    - Translate all in ${language}.`.trim();
 
     const prompt = commitPrompt || defaultCommitPrompt;
     const fullQuery = `${prompt}\n\nHere are the summaries changes: ${summaries.join(", ")}`;

@@ -2,10 +2,10 @@
     "name": "commit-pieces-ai",
     "displayName": "Commit AI - Pieces for Developers",
     "description": "Generative Commit AI with Pieces for Developers",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "publisher": "DavideLadisa",
     "engines": {
-        "vscode": "^1.92.0"
+        "vscode": "^1.93.0"
     },
     "categories": [
         "Machine Learning",
@@ -20,6 +20,7 @@
         "ai",
         "llm",
         "commits",
+        "commit ai",
         "pieces",
         "pieces for developers"
     ],
@@ -94,17 +95,36 @@
                         "description": "Custom prompt for commit message.",
                         "order": 6
                     },
+                    "commit-pieces-ai.languages": {
+                        "type": "string",
+                        "enum": [
+                            "English",
+                            "Mandarin Chinese",
+                            "Hindi",
+                            "Spanish",
+                            "French",
+                            "Italian",
+                            "Arabic",
+                            "Bengali",
+                            "Russian",
+                            "Portuguese",
+                            "Japanese"
+                        ],
+                        "default": "English",
+                        "description": "Select language to use for the commit message.",
+                        "order": 7
+                    },
                     "commit-pieces-ai.forceCommitLowerCase": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be lowercase.",
-                        "order": 7
+                        "order": 8
                     },
                     "commit-pieces-ai.forceCommitWithoutDotsAtEnd": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be without dot at the end.",
-                        "order": 8
+                        "order": 9
                     }
                 }
             }
