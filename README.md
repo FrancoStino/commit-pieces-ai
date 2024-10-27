@@ -199,6 +199,8 @@ This extension contributes the following settings:
 
 -   Use Description: It allows you to enable or disable the use of commit description.
 
+-   Number of characters: It allows you to select the number of characters for the commit message.
+
 -   Commit Language: It allows you to select the language for the commit message translation.
     <table>
         <thead>

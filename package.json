@@ -2,7 +2,7 @@
     "name": "commit-pieces-ai",
     "displayName": "Commit AI - Pieces for Developers",
     "description": "Generative Commit AI with Pieces for Developers",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "publisher": "DavideLadisa",
     "engines": {
         "vscode": "^1.93.0"
@@ -95,6 +95,14 @@
                         "description": "Custom prompt for commit message.",
                         "order": 6
                     },
+                    "commit-pieces-ai.custom.numberOfCharacters": {
+                        "type": "number",
+                        "default": 50,
+                        "minimum": 50,
+                        "maximum": 200,
+                        "description": "Number of characters to use for the commit message.",
+                        "order": 7
+                    },
                     "commit-pieces-ai.languages": {
                         "type": "string",
                         "enum": [
@@ -112,19 +120,19 @@
                         ],
                         "default": "English",
                         "description": "Select language to use for the commit message.",
-                        "order": 7
+                        "order": 8
                     },
                     "commit-pieces-ai.forceCommitLowerCase": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be lowercase.",
-                        "order": 8
+                        "order": 9
                     },
                     "commit-pieces-ai.forceCommitWithoutDotsAtEnd": {
                         "type": "boolean",
                         "default": false,
                         "description": "Enable or disable the commit message to be without dot at the end.",
-                        "order": 9
+                        "order": 10
                     }
                 }
             }
