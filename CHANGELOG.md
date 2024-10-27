@@ -1,3 +1,8 @@
+## [v2.2.0] - 2024-10-27
+### New Features
+- [`f9fda55`](https://github.com/FrancoStino/commit-pieces-ai/commit/f9fda55ef8b8caf0ee8a2d63a0f7e271745da068) - Add commit message length setting *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v2.1.0] - 2024-10-05
 ### New Features
 - [`9315097`](https://github.com/FrancoStino/commit-pieces-ai/commit/93150974e30d0f1ff648de839ed761f15f525c87) - Add multi-language commit message support *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -230,3 +235,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v1.5.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.3.1...v1.5.0
 [v2.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.5.0...v2.0.1
 [v2.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.0.1...v2.1.0
+[v2.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.1.0...v2.2.0
