@@ -29,13 +29,13 @@ export async function getSelectedModelid(context: vscode.ExtensionContext): Prom
         throw error;
     }
 
-    const selectedModelId = inferenceConfig.modelName;
+    const selectedModelUnique = inferenceConfig.modelName;
     const modelsApiInstance = new Pieces.ModelsApi(configurationUrl);
 
     try {
         const modelsSnapshot = await modelsApiInstance.modelsSnapshot();
-        const selectedModel = modelsSnapshot.iterable?.find(model => model.unique === selectedModelId);
-        console.log('Model selected name:', selectedModel?.unique, 'ID:', selectedModel?.id);
+        const selectedModel = modelsSnapshot.iterable?.find(model => model.unique === selectedModelUnique);
+        console.log(selectedModel?.unique);
 
         if (selectedModel) {
             return selectedModel.id;
