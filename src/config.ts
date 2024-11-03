@@ -1,7 +1,6 @@
-import { workspace, ExtensionContext } from "vscode";
-import { fetchModels } from './types/fetchModels';
-import * as Pieces from '@pieces.app/pieces-os-client';
-import os from 'os';
+import { workspace, ExtensionContext, WorkspaceConfiguration } from "vscode";
+import { Configuration } from '@pieces.app/pieces-os-client';
+import { platform } from 'os';
 
 class Config {
     private context: ExtensionContext;
@@ -10,11 +9,10 @@ class Config {
         this.context = context;
     }
 
-    async getInferenceConfig() {
+    getInferenceConfig() {
         const config = this.#config;
 
-        let modelName: string = config.get("model") as string;
-
+        const modelName: string = config.get("model") as string;
 
         // Load Emojis Config
         const useEmojis: boolean =
@@ -28,8 +26,8 @@ class Config {
      * Configures the Pieces OS client with the appropriate base path based on the current platform.
      * On Linux, the base path is set to `http://localhost:5323`, while on other platforms it is set to `http://localhost:1000`.
         */
-        const platform = os.platform();
-        const port = platform === 'linux' ? 5323 : 1000;
+        const currentPlatform = platform();
+        const port = currentPlatform === 'linux' ? 5323 : 1000;
 
         // Load Url
         const piecesConfig = workspace.getConfiguration("pieces");
@@ -39,7 +37,7 @@ class Config {
             url = url.slice(0, -1).trim();
         }
 
-        const configurationUrl = new Pieces.Configuration({
+        const configurationUrl = new Configuration({
             basePath: url
         });
 
@@ -48,10 +46,13 @@ class Config {
         // const summaryTemperature = config.get("custom.summaryTemperature") as number;
         const commitPrompt: string = config.get("custom.commitPrompt") as string;
         // const commitTemperature = config.get("custom.commitTemperature") as number;
+        const commitCharacters: number = config.get("custom.numberOfCharacters") as number;
+        const language: string = config.get('languages') as string;
         const forceCommitLowerCase: boolean = config.get('forceCommitLowerCase') as boolean;
         const forceCommitWithoutDotsAtEnd: boolean = config.get('forceCommitWithoutDotsAtEnd') as boolean;
 
         return {
+            configurationUrl,
             modelName,
             summaryPrompt,
             // summaryTemperature,
@@ -60,13 +61,14 @@ class Config {
             useEmojis,
             commitEmojis,
             useDescription,
-            configurationUrl,
+            commitCharacters,
+            language,
             forceCommitLowerCase,
             forceCommitWithoutDotsAtEnd
         };
     }
 
-    get #config() {
+    get #config(): WorkspaceConfiguration {
         return workspace.getConfiguration("commit-pieces-ai");
     }
 }

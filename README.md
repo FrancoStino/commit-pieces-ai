@@ -44,6 +44,7 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 -   Automatic generation of commit messages based on modified code.
 -   Code analysis for improvement suggestions before committing.
 -   Seamless integration with Git workflow in VS Code.
+-   Ability to translate commit messages into multiple languages.
 
 ## Usage
 
@@ -197,6 +198,30 @@ This extension contributes the following settings:
 -   Custom Commit Prompt: The prompt that will be used to generate the commit message.
 
 -   Use Description: It allows you to enable or disable the use of commit description.
+
+-   Number of characters: It allows you to select the number of characters for the commit message.
+
+-   Commit Language: It allows you to select the language for the commit message translation.
+    <table>
+        <thead>
+            <tr>
+                <th>Languages</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>🇬🇧 English</td></tr>
+            <tr><td>🇨🇳 Mandarin Chinese</td></tr>
+            <tr><td>🇮🇳 Hindi</td></tr>
+            <tr><td>🇪🇸 Spanish</td></tr>
+            <tr><td>🇫🇷 French</td></tr>
+            <tr><td>🇮🇹 Italian</td></tr>
+            <tr><td>🇸🇦 Arabic</td></tr>
+            <tr><td>🇧🇩 Bengali</td></tr>
+            <tr><td>🇷🇺 Russian</td></tr>
+            <tr><td>🇵🇹 Portuguese</td></tr>
+            <tr><td>🇯🇵 Japanese</td></tr>
+        </tbody>
+    </table>
 
 -   Force Commit Lowercase: It allows you to enable or disable the lowercase of the commit message.
 
