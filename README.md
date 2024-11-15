@@ -69,7 +69,10 @@ To use Commit Pieces for Developers AI, you need to install **[Pieces for Develo
 
 This extension contributes the following settings:
 
--   Model: You can select the model from the plugin configuration:
+-   Model: You can select the model from the plugin configuration (Cloud or Local):
+    > ##### Local Models
+    >
+    > For local models, actually you need to download the model from the Pieces for Developers app. Automatically the extension will check if the model is downloaded and if not.
 
 <table>
     <thead>
