@@ -1,3 +1,20 @@
+## [v3.0.0] - 2024-11-15
+### New Features
+- [`177947b`](https://github.com/FrancoStino/commit-pieces-ai/commit/177947bb6dd7cab1c32929194ede239a91622b5b) - Implement multi-step input flow for model selection in VS Code extension. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### Refactors
+- [`0b90d39`](https://github.com/FrancoStino/commit-pieces-ai/commit/0b90d398d7e57f8a4badccd7aaa05943956fdc79) - Update dependency to ^4.0.1. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`6db1692`](https://github.com/FrancoStino/commit-pieces-ai/commit/6db169258a9a5b78e82eed7e06a965ae3a421e64) - Update dependencies to latest versions. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`b318fb4`](https://github.com/FrancoStino/commit-pieces-ai/commit/b318fb48fbafb57ae7899dd758c79227fbbc496c) - Improve imports, error handling, and logging *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### Chores
+- [`9a7c159`](https://github.com/FrancoStino/commit-pieces-ai/commit/9a7c159814fcfbec58fe1ed9046ea20a6042a90c) - Update dependencies and add TypeScript file *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`e3dad2c`](https://github.com/FrancoStino/commit-pieces-ai/commit/e3dad2ca259fff738b0b42e82df5cbe5e2877051) - update dependencies and refactor variable names *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### Other Changes
+- [`3ad0757`](https://github.com/FrancoStino/commit-pieces-ai/commit/3ad075712eeadce1b127facd7796a9c067c68ca3) - Merge branch 'develop' into local-models *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v2.2.0] - 2024-10-27
 ### New Features
 - [`f9fda55`](https://github.com/FrancoStino/commit-pieces-ai/commit/f9fda55ef8b8caf0ee8a2d63a0f7e271745da068) - Add commit message length setting *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -236,3 +253,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v2.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v1.5.0...v2.0.1
 [v2.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.0.1...v2.1.0
 [v2.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.1.0...v2.2.0
+[v3.0.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.2.0...v3.0.0
