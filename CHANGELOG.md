@@ -1,3 +1,10 @@
+## [v3.0.1] - 2024-11-26
+### New Features
+- [`8d6a0d9`](https://github.com/FrancoStino/commit-pieces-ai/commit/8d6a0d9196cc9474b87378278063b19295e92a08) - Update devDependencies versions for various packages. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`6dfccd5`](https://github.com/FrancoStino/commit-pieces-ai/commit/6dfccd5ea2668d2f3fa3928dfccc13174820eaf9) - Update version number to 3.0.1. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`a2bdcf8`](https://github.com/FrancoStino/commit-pieces-ai/commit/a2bdcf87a7fcf1be917031d34c12efbf7c6447aa) - Add prompts for generating summary and commit message based on user input. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.0.0] - 2024-11-15
 ### New Features
 - [`177947b`](https://github.com/FrancoStino/commit-pieces-ai/commit/177947bb6dd7cab1c32929194ede239a91622b5b) - Implement multi-step input flow for model selection in VS Code extension. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -254,3 +261,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v2.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.0.1...v2.1.0
 [v2.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.1.0...v2.2.0
 [v3.0.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.2.0...v3.0.0
+[v3.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.0...v3.0.1
