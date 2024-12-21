@@ -2,7 +2,7 @@
     "name": "commit-pieces-ai",
     "displayName": "Commit AI - Pieces for Developers",
     "description": "Generative Commit AI with Pieces for Developers",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "publisher": "DavideLadisa",
     "preview": true,
     "engines": {
