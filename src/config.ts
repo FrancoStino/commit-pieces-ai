@@ -27,7 +27,7 @@ class Config {
      * On Linux, the base path is set to `http://localhost:5323`, while on other platforms it is set to `http://localhost:1000`.
         */
         const currentPlatform = platform();
-        const port = currentPlatform === 'linux' ? 5323 : 1000;
+        const port = currentPlatform === 'linux' ? 39300 : 1000;
 
         // Load Url
         const piecesConfig = workspace.getConfiguration("pieces");
