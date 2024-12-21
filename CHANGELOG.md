@@ -1,3 +1,9 @@
+## [v3.0.2] - 2024-12-21
+### New Features
+- [`ad175cd`](https://github.com/FrancoStino/commit-pieces-ai/commit/ad175cdbb653c25316c493fe8ddebd99f6537d8a) - update default Linux port number *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`ab9c811`](https://github.com/FrancoStino/commit-pieces-ai/commit/ab9c8112a147fddea564810da6eb815dc3c87197) - update version to 3.0.2 and devDependencies *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v3.0.1] - 2024-11-26
 ### New Features
 - [`8d6a0d9`](https://github.com/FrancoStino/commit-pieces-ai/commit/8d6a0d9196cc9474b87378278063b19295e92a08) - Update devDependencies versions for various packages. *(commit by [@FrancoStino](https://github.com/FrancoStino))*
@@ -262,3 +268,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v2.2.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.1.0...v2.2.0
 [v3.0.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.2.0...v3.0.0
 [v3.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.0...v3.0.1
+[v3.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.1...v3.0.2
