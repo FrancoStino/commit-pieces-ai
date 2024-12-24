@@ -1,3 +1,8 @@
+## [v3.0.3] - 2024-12-21
+### Other Changes
+- [`96755ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/96755ba2515563b97f881adb713d8d40c7e25778) - Merge branch 'main' of https://github.com/FrancoStino/commit-pieces-ai *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v3.0.2] - 2024-12-21
 ### New Features
 - [`ad175cd`](https://github.com/FrancoStino/commit-pieces-ai/commit/ad175cdbb653c25316c493fe8ddebd99f6537d8a) - update default Linux port number *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -269,3 +274,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.0.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v2.2.0...v3.0.0
 [v3.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.0...v3.0.1
 [v3.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.1...v3.0.2
+[v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
