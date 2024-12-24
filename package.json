@@ -36,7 +36,7 @@
             {
                 "command": "commit-pieces-ai.createCommit",
                 "title": "Commit AI - Pieces for Developers: Create Commit",
-                "icon": "$(sparkle)"
+                "icon": "$(git-commit)"
             },
             {
                 "command": "commit-pieces-ai.fetchModels",
@@ -45,6 +45,13 @@
         ],
         "menus": {
             "scm/title": [
+                {
+                    "when": "scmProvider == git",
+                    "command": "commit-pieces-ai.createCommit",
+                    "group": "navigation"
+                }
+            ],
+            "scm/inputBox": [
                 {
                     "when": "scmProvider == git",
                     "command": "commit-pieces-ai.createCommit",
