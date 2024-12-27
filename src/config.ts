@@ -10,7 +10,7 @@ class Config {
     }
 
     getInferenceConfig() {
-        const config = this.config;
+        const config = this.#config;
 
         const modelName: string = config.get("model") as string;
 
@@ -30,7 +30,7 @@ class Config {
         const port = currentPlatform === 'linux' ? 39300 : 1000;
 
         // Load Url
-        const piecesConfig = this.context.workspaceState.get("pieces") as WorkspaceConfiguration;
+        const piecesConfig = workspace.getConfiguration("pieces");
         const piecesCustomUrl = piecesConfig.get("customUrl") as string;
         let url: string = piecesCustomUrl || `http://localhost:${port}`;
         if (url.endsWith("/")) {
@@ -42,12 +42,12 @@ class Config {
         });
 
         // Load custom prompt and temperatures
-        const summaryPrompt: string = config.get("customSummaryPrompt") as string;
+        const summaryPrompt: string = config.get("custom.summaryPrompt") as string;
         // const summaryTemperature = config.get("custom.summaryTemperature") as number;
         const commitPrompt: string = config.get("custom.commitPrompt") as string;
         // const commitTemperature = config.get("custom.commitTemperature") as number;
         const commitCharacters: number = config.get("custom.numberOfCharacters") as number;
-        const language: string = config.get('language') as string;
+        const language: string = config.get('languages') as string;
         const forceCommitLowerCase: boolean = config.get('forceCommitLowerCase') as boolean;
         const forceCommitWithoutDotsAtEnd: boolean = config.get('forceCommitWithoutDotsAtEnd') as boolean;
 
@@ -68,8 +68,8 @@ class Config {
         };
     }
 
-    get config(): WorkspaceConfiguration {
-        return this.context.workspaceState.get("commit-pieces-ai") as WorkspaceConfiguration;
+    get #config(): WorkspaceConfiguration {
+        return workspace.getConfiguration("commit-pieces-ai");
     }
 }
 
