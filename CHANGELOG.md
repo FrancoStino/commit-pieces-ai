@@ -1,3 +1,17 @@
+## [v3.1.0] - 2024-12-27
+### Refactors
+- [`165c76e`](https://github.com/FrancoStino/commit-pieces-ai/commit/165c76e8bf67f9767e3d615728db195b3e8be413) - Update config access methods for encapsulation *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+- [`c9e5251`](https://github.com/FrancoStino/commit-pieces-ai/commit/c9e5251b2bcd4ffe7e9bb4c71e59e7dc31a7b185) - Simplify model selection with quick pick *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+### Chores
+- [`18c328e`](https://github.com/FrancoStino/commit-pieces-ai/commit/18c328ef9b452272cc109bac57894b8108f91437) - update vscode engine and extension icons *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`edf70d9`](https://github.com/FrancoStino/commit-pieces-ai/commit/edf70d9e69175d4c0f02f7209b0a6dd42020659a) - updated package versions and dependencies *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`d01852a`](https://github.com/FrancoStino/commit-pieces-ai/commit/d01852a04d061240cc33ba370766a52a75457bf5) - update config settings *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+### Other Changes
+- [`7fef0ec`](https://github.com/FrancoStino/commit-pieces-ai/commit/7fef0ec6acbd47ab127a215d2b8ace221491f736) - Merge branch 'develop' of https://github.com/FrancoStino/commit-pieces-ai into develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.0.3] - 2024-12-21
 ### Other Changes
 - [`96755ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/96755ba2515563b97f881adb713d8d40c7e25778) - Merge branch 'main' of https://github.com/FrancoStino/commit-pieces-ai *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -275,3 +289,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.0.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.0...v3.0.1
 [v3.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.1...v3.0.2
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
+[v3.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.3...v3.1.0
