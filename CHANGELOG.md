@@ -1,3 +1,8 @@
+## [v3.0.3] - 2025-05-17
+### Other Changes
+- [`96755ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/96755ba2515563b97f881adb713d8d40c7e25778) - Merge branch 'main' of https://github.com/FrancoStino/commit-pieces-ai *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v3.1.0] - 2024-12-27
 ### Refactors
 - [`165c76e`](https://github.com/FrancoStino/commit-pieces-ai/commit/165c76e8bf67f9767e3d615728db195b3e8be413) - Update config access methods for encapsulation *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -290,3 +295,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.0.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.1...v3.0.2
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
 [v3.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.3...v3.1.0
+[v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
