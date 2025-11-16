@@ -1,3 +1,8 @@
+## [v3.0.3] - 2025-11-16
+### Other Changes
+- [`96755ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/96755ba2515563b97f881adb713d8d40c7e25778) - Merge branch 'main' of https://github.com/FrancoStino/commit-pieces-ai *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
+
+
 ## [v3.1.1] - 2025-11-04
 ### Other Changes
 - [`2665286`](https://github.com/FrancoStino/commit-pieces-ai/commit/266528622f7fb44edde839c6047a742052c76674) - Merge pull request [#7](https://github.com/FrancoStino/commit-pieces-ai/pull/7) from FrancoStino/dependabot/npm_and_yarn/npm_and_yarn-392d5e510b
@@ -308,3 +313,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.1.0]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.3...v3.1.0
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
 [v3.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.0...v3.1.1
+[v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
