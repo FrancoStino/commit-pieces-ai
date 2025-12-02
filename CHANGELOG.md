@@ -1,3 +1,20 @@
+## [v3.1.1] - 2025-12-02
+### Chores
+- [`ec20828`](https://github.com/FrancoStino/commit-pieces-ai/commit/ec2082845656f74b765b13fd75339782a896ac7e) - **deps**: bump js-yaml in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+### Other Changes
+- [`2665286`](https://github.com/FrancoStino/commit-pieces-ai/commit/266528622f7fb44edde839c6047a742052c76674) - Merge pull request [#7](https://github.com/FrancoStino/commit-pieces-ai/pull/7) from FrancoStino/dependabot/npm_and_yarn/npm_and_yarn-392d5e510b
+
+chore(deps-dev): bump esbuild from 0.24.2 to 0.25.0 in the npm_and_yarn group across 1 directory *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`05c4717`](https://github.com/FrancoStino/commit-pieces-ai/commit/05c4717cfa6604e3109e5d91f267930c60e5483a) - Update package.json *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`0cf9d7e`](https://github.com/FrancoStino/commit-pieces-ai/commit/0cf9d7ed4baf466c409e40e37e05469a5de6b027) - Merge pull request [#8](https://github.com/FrancoStino/commit-pieces-ai/pull/8) from FrancoStino/develop
+
+Develop *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+- [`92b16b3`](https://github.com/FrancoStino/commit-pieces-ai/commit/92b16b327fc25b6ba021e04600715eaa284cfe18) - Merge pull request [#9](https://github.com/FrancoStino/commit-pieces-ai/pull/9) from FrancoStino/dependabot/npm_and_yarn/npm_and_yarn-3c67cbb9cd
+
+chore(deps): bump js-yaml from 4.1.0 to 4.1.1 in the npm_and_yarn group across 1 directory *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.0.3] - 2025-11-16
 ### Other Changes
 - [`96755ba`](https://github.com/FrancoStino/commit-pieces-ai/commit/96755ba2515563b97f881adb713d8d40c7e25778) - Merge branch 'main' of https://github.com/FrancoStino/commit-pieces-ai *(commit by [@DavideLadisaSidea](https://github.com/DavideLadisaSidea))*
@@ -314,3 +331,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
 [v3.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.0...v3.1.1
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
+[v3.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.0...v3.1.1
