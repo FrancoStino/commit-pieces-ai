@@ -1,3 +1,8 @@
+## [v3.1.2] - 2025-12-02
+### Other Changes
+- [`1485771`](https://github.com/FrancoStino/commit-pieces-ai/commit/14857712e10d011cd9ef61dadddbd9d333fd0d50) - Update package.json *(commit by [@FrancoStino](https://github.com/FrancoStino))*
+
+
 ## [v3.1.1] - 2025-12-02
 ### Chores
 - [`ec20828`](https://github.com/FrancoStino/commit-pieces-ai/commit/ec2082845656f74b765b13fd75339782a896ac7e) - **deps**: bump js-yaml in the npm_and_yarn group across 1 directory *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
@@ -332,3 +337,4 @@ Develop _(commit by [@FrancoStino](https://github.com/FrancoStino))_
 [v3.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.0...v3.1.1
 [v3.0.3]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.0.2...v3.0.3
 [v3.1.1]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.0...v3.1.1
+[v3.1.2]: https://github.com/FrancoStino/commit-pieces-ai/compare/v3.1.1...v3.1.2
